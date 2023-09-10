@@ -24,23 +24,26 @@ function SectionItens({
   return (
     <section
       className={twMerge(
-        "flex flex-col items-center gap-12 w-full max-w-[1216px] ",
+        "flex flex-col xl:items-center items-start gap-12 w-full max-w-[1216px] p-6",
         className,
       )}
       {...rest}
     >
-      <h2 className="text-5xl font-extrabold leading-[130%]">
+      <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%]">
         {title}
       </h2>
 
-      <div className="flex justify-between">
+      <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
         {data.map(({ id, body, title, Icon }) => (
-          <div key={id} className="flex flex-col gap-4">
+          <div
+            key={id}
+            className="flex flex-col gap-4  max-w-md"
+          >
             {Icon}
-            <h3 className="text-black font-bold leading-[120%] text-3xl max-w-sm">
+            <h3 className="text-black font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm">
               {title}
             </h3>
-            <p className="text-[#646464] text-lg leading-[130%]">
+            <p className="text-[#646464] xl:text-lg text-sm leading-[130%]">
               {body}
             </p>
           </div>

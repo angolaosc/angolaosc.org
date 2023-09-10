@@ -46,11 +46,11 @@ export default function Home() {
         data-scroll-direction="horizontal"
         data-scroll-speed="10"
       /> */}
-      {/* <Purpose
+      <Purpose
         data={PURPOSES}
         title="Nossos principais objetivos"
         className="py-52"
-      /> */}
+      />
       <Motivations />
       {/* <Program /> */}
       {/* <Benefits /> */}
