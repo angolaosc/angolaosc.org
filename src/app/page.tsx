@@ -33,10 +33,10 @@ export default function Home() {
       <Motivations />
       <Program />
       <Benefits />
-      {/* <HowItWorks
+      <HowItWorks
         title="Como isto funciona?"
         data={HOW_IT_WORKS}
-      /> */}
+      />
       {/* <OurTeam /> */}
     </main>
   );

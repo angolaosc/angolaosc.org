@@ -24,12 +24,12 @@ function SectionItens({
   return (
     <section
       className={twMerge(
-        "flex flex-col xl:items-center items-start gap-12 w-full max-w-[1216px] p-6",
+        "flex flex-col xl:items-center items-start md:items-center gap-12 w-full max-w-[1216px] p-6",
         className,
       )}
       {...rest}
     >
-      <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%]">
+      <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
         {title}
       </h2>
 
