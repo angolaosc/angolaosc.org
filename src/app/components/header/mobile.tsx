@@ -13,7 +13,7 @@ type MenuProps = {
 };
 
 function MobileHeader({ items }: MenuProps) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="bg-white text-white w-full fixed z-50 lg:hidden top-0">
