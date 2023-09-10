@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+.bounce {
+  animation: bounce 3s linear infinite;
+  transform: translateY(0);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
