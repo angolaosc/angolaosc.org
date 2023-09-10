@@ -33,32 +33,32 @@ export default function Home() {
     >
       <Header data-scroll />
       <Headline data-scroll />
-      {/*<Tape
+      {/* <Tape
         className="bg-red-400 text-black "
         data-scroll
         data-scroll-direction="horizontal"
         data-scroll-speed="-10"
-      />
+      /> */}
       <br />
-      <Tape
+      {/* <Tape
         className="bg-black text-white"
         data-scroll
         data-scroll-direction="horizontal"
         data-scroll-speed="10"
-      />
-      <Purpose
+      /> */}
+      {/* <Purpose
         data={PURPOSES}
         title="Nossos principais objetivos"
         className="py-52"
-      />
+      /> */}
       <Motivations />
-      <Program />
-      <Benefits />
-      <HowItWorks
+      {/* <Program /> */}
+      {/* <Benefits /> */}
+      {/* <HowItWorks
         title="Como isto funciona?"
         data={HOW_IT_WORKS}
-      />
-      <OurTeam /> */}
+      /> */}
+      {/* <OurTeam /> */}
     </main>
     // </LocomotiveScrollProvider>
   );

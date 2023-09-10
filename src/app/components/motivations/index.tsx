@@ -8,17 +8,17 @@ function Motivations({ className, ...rest }: any) {
   return (
     <section
       className={twMerge(
-        "flex flex-col items-center gap-12 w-full py-[200px]  bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom",
+        "flex flex-col items-center gap-12 px-6 w-full xl:py-[200px]  bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom",
         className,
       )}
       {...rest}
     >
-      <div className="w-full max-w-[1216px] py-44 flex justify-between">
+      <div className="w-full max-w-[1216px] py-44 flex justify-between flex-col xl:flex-row gap-7">
         <div className="max-w-[490px] flex flex-col gap-3">
-          <h2 className="text-5xl font-bold leading-[130%] text-white">
+          <h2 className="md:text-5xl text-3xl font-bold leading-[130%] text-white">
             Nossas Motivações
           </h2>
-          <p className="text-xl font-medium leading-[150%] text-white">
+          <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
             It’s time to take control of your books. Buy our
             software so you can feel like you’re doing
             something productive.
@@ -26,7 +26,7 @@ function Motivations({ className, ...rest }: any) {
           <ButtonLink
             href={"/"}
             text={"Juntar-me a comunidade"}
-            className="max-w-fit"
+            className="md:max-w-fit w-full text-center justify-center md:justify-start"
           />
         </div>
         <div className="max-w-[696px]">
