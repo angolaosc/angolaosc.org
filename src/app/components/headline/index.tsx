@@ -7,7 +7,7 @@ import Image from "next/image";
 function Headline({ ...rest }) {
   return (
     <section
-      className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start "
+      className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start pt-32 "
       {...rest}
     >
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
