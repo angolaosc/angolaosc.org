@@ -6,40 +6,40 @@ import React from "react";
 function Program() {
   return (
     <section className="py-44">
-      <div className="flex items-center gap-12 w-full max-w-[1216px]">
-        <div className="flex flex-col gap-28">
-          <h2 className="text-5xl font-extrabold leading-[130%]">
+      <div className="flex items-center gap-12 w-full max-w-[1216px] p-6 flex-col-reverse xl:flex-row">
+        <div className="flex flex-col xl:gap-28 gap-6">
+          <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%]">
             Programa de Mentoria
           </h2>
-          <ul className="flex flex-wrap w-[630px] gap-10">
+          <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4">
             <li>
-              <div className="flex gap-4 w-64 flex-col">
-                <h3 className="text-3xl font-bold leading-[120%]">
+              <div className="flex xl:gap-4 gap-2 w-64 flex-col">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                   Workshops
                 </h3>
-                <p className="text-[#646464] text-base leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                   Inclui uma semana de workshops online e
                   treinamentos introdutórios
                 </p>
               </div>
             </li>
             <li>
-              <div className="flex gap-4 w-64 flex-col">
-                <h3 className="text-3xl font-bold leading-[120%]">
+              <div className="flex xl:gap-4 gap-2 w-64 flex-col">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                   Workshops
                 </h3>
-                <p className="text-[#646464] text-base leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                   Inclui uma semana de workshops online e
                   treinamentos introdutórios
                 </p>
               </div>
             </li>
             <li>
-              <div className="flex gap-4 w-64 flex-col">
-                <h3 className="text-3xl font-bold leading-[120%]">
+              <div className="flex xl:gap-4 gap-2 w-64 flex-col">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                   Workshops
                 </h3>
-                <p className="text-[#646464] text-base leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                   Inclui uma semana de workshops online e
                   treinamentos introdutórios
                 </p>
@@ -47,7 +47,7 @@ function Program() {
             </li>
           </ul>
         </div>
-        <div className="w-[400px] bg-red-500 h-[624px] rounded-xl flex items-end justify-center relative">
+        <div className="w-full xl:w-[448px]  bg-red-500 h-[624px] rounded-xl xl:flex items-end justify-center relative hidden">
           <div className="bg-white bounce p-4 rounded-xl flex gap-2 absolute bottom-8 left-[50%] select-none pointer-events-none ">
             <div className="bg-[#449DEF] flex items-center justify-center rounded-full w-6 h-6">
               <Check size={16} weight="bold" color="#fff" />
