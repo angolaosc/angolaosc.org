@@ -1,7 +1,6 @@
 "use client";
 import Header from "./components/header";
 import Headline from "./components/headline";
-import { useRef } from "react";
 import Tape from "./components/tape";
 import Purpose from "./components/section-itens";
 import HowItWorks from "./components/section-itens";
@@ -37,7 +36,7 @@ export default function Home() {
         title="Como isto funciona?"
         data={HOW_IT_WORKS}
       />
-      {/* <OurTeam /> */}
+      <OurTeam />
     </main>
   );
 }

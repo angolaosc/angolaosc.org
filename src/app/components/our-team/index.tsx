@@ -4,12 +4,12 @@ import React from "react";
 
 function OurTeam() {
   return (
-    <section className="py-24 pt-64">
-      <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px]">
-        <h2 className="text-5xl font-extrabold leading-[130%]">
+    <section className="pt-64">
+      <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
+        <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
           Conheça o nosso team incrível
         </h2>
-        <div className="flex gap-8 flex-wrap max-w-[904px] justify-start items-start">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {TEAM.map(
             ({
               id,
@@ -18,16 +18,19 @@ function OurTeam() {
               ocupation,
               avatar,
             }) => (
-              <div key={id} className="max-w-[280px]">
+              <div
+                key={id}
+                className="md:max-w-[280px] w-full"
+              >
                 <Image
                   src={avatar}
                   alt={name}
                   width={384}
                   height={318}
-                  className="h-64 object-fill aspect-video rounded-xl"
+                  className="h-64 object-fill w-full aspect-video rounded-xl"
                 />
-                <div className="py-8 pl-7">
-                  <p className="text-[#262626] text-base font-medium leading-[130%]">
+                <div className="py-8 md:pl-7">
+                  <p className="text-gray-500 text-base font-medium leading-[130%]">
                     {description}
                   </p>
                   <div className="flex gap-1 flex-col ">
