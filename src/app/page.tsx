@@ -32,7 +32,7 @@ export default function Home() {
       />
       <Motivations />
       <Program />
-      {/* <Benefits /> */}
+      <Benefits />
       {/* <HowItWorks
         title="Como isto funciona?"
         data={HOW_IT_WORKS}
