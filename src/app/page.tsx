@@ -33,19 +33,12 @@ export default function Home() {
     >
       <Header data-scroll />
       <Headline data-scroll />
-      {/* <Tape
-        className="bg-red-400 text-black "
-        data-scroll
-        data-scroll-direction="horizontal"
-        data-scroll-speed="-10"
-      /> */}
-      <br />
-      {/* <Tape
+      <Tape className="bg-red-400 text-black " />
+      {/* <br /> */}
+      <Tape
+        direction="left"
         className="bg-black text-white"
-        data-scroll
-        data-scroll-direction="horizontal"
-        data-scroll-speed="10"
-      /> */}
+      />
       <Purpose
         data={PURPOSES}
         title="Nossos principais objetivos"

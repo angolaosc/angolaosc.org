@@ -1,32 +1,53 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-function Tape({ className, ...rest }: any) {
+interface TapeProps {
+  className?: string;
+  direction?: "left" | "right";
+}
+
+function Tape({
+  className,
+  direction = "right",
+  ...rest
+}: TapeProps) {
+  const animationClass =
+    direction === "right"
+      ? "animate-slide-right"
+      : "animate-slide-left";
+
   return (
     <div
       className={twMerge(
-        "p-4 w-full pointer-events-none select-none",
+        "p-6 w-full h-full flex items-center justify-center overflow-hidden relative",
         className,
       )}
       {...rest}
     >
-      <span className="text-2xl font-bold">
-        <ul className="flex gap-8">
-          <li>Github</li>
-          <li>.</li>
-          <li>Código Aberto</li>
-          <li>.</li>
-          <li>Software Livre</li>
-          <li>.</li>
-          <li>Github</li>
-          <li>.</li>
-          <li>Github</li>
-          <li>.</li>
-          <li>Github</li>
-          <li>.</li>
-          <li>Github</li>
-        </ul>
-      </span>
+      <div
+        className={`absolute flex space-x-4 ${animationClass} whitespace-nowrap items-center`}
+      >
+        {/* Conteúdo duplicado para transição suave */}
+        {[...Array(2)].map((_, idx) => (
+          <span key={idx} className="text-2xl font-bold">
+            <ul className="flex gap-4 md:gap-8">
+              <li>Github</li>
+              <li>.</li>
+              <li>Código Aberto</li>
+              <li>.</li>
+              <li>Software Livre</li>
+              <li>.</li>
+              <li>Github</li>
+              <li>.</li>
+              <li>Github</li>
+              <li>.</li>
+              <li>Github</li>
+              <li>.</li>
+              <li>Github</li>
+            </ul>
+          </span>
+        ))}
+      </div>
     </div>
   );
 }

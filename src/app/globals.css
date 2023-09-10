@@ -39,3 +39,29 @@ img {
     transform: translateY(0);
   }
 }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-right {
+  animation: slide-right 20s linear infinite;
+}
+
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
+}
