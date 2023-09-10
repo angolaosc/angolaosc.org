@@ -33,7 +33,7 @@ export default function Home() {
     >
       <Header data-scroll />
       <Headline data-scroll />
-      <Tape
+      {/*<Tape
         className="bg-red-400 text-black "
         data-scroll
         data-scroll-direction="horizontal"
@@ -58,7 +58,7 @@ export default function Home() {
         title="Como isto funciona?"
         data={HOW_IT_WORKS}
       />
-      <OurTeam />
+      <OurTeam /> */}
     </main>
     // </LocomotiveScrollProvider>
   );

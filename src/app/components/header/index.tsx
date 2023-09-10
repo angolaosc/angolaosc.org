@@ -7,7 +7,7 @@ import { MENU } from "@/utils/data/menu";
 function Header({ ...rest }) {
   return (
     <header
-      className="w-full flex flex-col items-center justify-center"
+      className="w-full flex-col items-center justify-center  p-6  hidden md:flex"
       {...rest}
     >
       <div
@@ -17,13 +17,13 @@ function Header({ ...rest }) {
         data-scroll-call="dynamicColor"
         data-scroll-repeat
         data-scroll-sticky
-        className="flex py-[16px] gap-2 pointer-events-none select-none"
+        className="flex gap-2 pointer-events-none select-none"
       >
         <i>🇦🇴</i>
         <span className="text-[#449DEF]">
           {" "}
-          Participe agora do primeiro evento presencial da Angola Open Source
-          Commnunity em Luanda.
+          Participe agora do primeiro evento presencial da
+          Angola Open Source Commnunity em Luanda.
         </span>
       </div>
       <div className="w-full max-w-[1216px] h-28 flex items-center justify-between">

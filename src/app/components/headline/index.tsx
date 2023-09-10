@@ -7,18 +7,18 @@ import Image from "next/image";
 function Headline({ ...rest }) {
   return (
     <section
-      className="flex items-center w-full max-w-[1216px] py-10 justify-between"
+      className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start "
       {...rest}
     >
-      <div className="max-w-[696px] flex flex-col gap-5">
+      <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
-          className="text-5xl font-extrabold leading-[130%] my-element"
+          className="md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Crie um impacto <br /> significativo na inovação
-          tecnológica do país.
+          Crie um impacto <br className="hidden xl:block" />{" "}
+          significativo na inovação tecnológica do país.
         </motion.h1>
         <p
           // data-scroll
@@ -26,21 +26,21 @@ function Headline({ ...rest }) {
           // data-scroll-speed="6"
           // data-scroll-call="dynamicColor"
           // data-scroll-repeat
-          className="text-xl text-[#646464] leading-[150%] font-medium"
+          className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start"
         >
           O nosso objetivo é permitir que os programadores
           angolanos contribuam ativamente para projetos de
           código aberto internacionalmente.
         </p>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
             href={"/"}
             text={"Juntar-me a comunidade"}
           />
           <Link href={"/"}>Saiba Mais</Link>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex -space-x-3 overflow-hidden p-6 px-0">
+        <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
+          <div className="flex -space-x-3 overflow-hidden p-2 px-0">
             <Image
               className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
               src="/avatar.avif"
@@ -82,7 +82,7 @@ function Headline({ ...rest }) {
           </span>
         </div>
       </div>
-      <div className="bg-gray-200 rounded-lg w-[600px] flex items-center justify-center relative">
+      <div className="bg-gray-200 rounded-lg w-[600px] hidden items-center justify-center relative xl:flex">
         <motion.span
           className="bg-red-300 absolute top-[90px] left-24 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer"
           drag
