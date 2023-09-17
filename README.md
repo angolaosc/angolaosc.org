@@ -1,28 +1,6 @@
-<<<<<<< HEAD
-# AOSC - [Name of the project]
+# AOSC - Website
 
-Description of the project  
-
-## Contributing
-
-Contributions are always welcome!
-
-See `CONTRIBUTING.md` for ways to get started.
-
-## License
-[Name of the project] is licensed under the [Apache License](./LICENSE), Version 2.0
-
----
-
-[Name of the project] is a <a href="http://github.com/angolasc">Angola Open-source Community</a> open project.
-
-![Angola Open-source Community](https://raw.githubusercontent.com/angolaosc/.github/main/logo/aosc.png)
-
-## Code of Conduct(CoC)
-
-Please note that [Name of the project] follows the [AOSC Code of Conduct](https://github.com/angolaosc/.github/blob/main/CODE_OF_CONDUCT.md). By participating in this project, you agree to follow its terms.
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Site oficial da Angola Open-source Community
 
 ## Getting Started
 
@@ -38,22 +16,25 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can edit the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are always welcome!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See `CONTRIBUTING.md` for ways to get started.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
+This project is licensed under the [Apache License](./LICENSE), Version 2.0
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is a <a href="http://github.com/angolasc">Angola Open-source Community</a> open project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 77b145e (setup project)
+![Angola Open-source Community](https://raw.githubusercontent.com/angolaosc/.github/main/logo/aosc.png)
+
+## Code of Conduct(CoC)
+
+Please note that this project follows the [AOSC Code of Conduct](https://github.com/angolaosc/.github/blob/main/CODE_OF_CONDUCT.md). By participating in this project, I want you to know that you agree to follow its terms.
