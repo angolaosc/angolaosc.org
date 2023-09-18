@@ -28,12 +28,11 @@ function Footer({ ...rest }) {
                 </h3>
               </div>
               <p className="text-gray-600 w-72">
-                Faça parte da maioria comunidade de código
-                aberto de Angola.
+                We aim to develop and promote FOSS in Angola.
               </p>
             </div>
             <ButtonLink
-              href="mailton:angola.opensource@gmail.com"
+              href="mailton:info@aosc.social"
               text="Fale conosco"
               className="text-center justify-center items-center w-56"
             />
@@ -47,7 +46,7 @@ function Footer({ ...rest }) {
                     href={"#"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    Inicio
+                    Início
                   </Link>
                 </li>
                 <li>
@@ -80,9 +79,17 @@ function Footer({ ...rest }) {
             <div className="w-52">
               <h3 className="text-xl">Comunidades</h3>
               <ul className="flex flex-col">
+              <li>
+                  <Link
+                    href={"https://discord.com/invite/tuUDNdRzvz"}
+                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                  >
+                    Discord
+                  </Link>
+                </li>
                 <li>
                   <Link
-                    href={"#"}
+                    href={"https://www.facebook.com/aoscangola"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Facebook
@@ -90,7 +97,7 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <Link
-                    href={"#"}
+                    href={"https://www.linkedin.com/company/angola-open-source-community"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Linkedin
@@ -98,20 +105,13 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <Link
-                    href={"#"}
+                    href={"https://www.youtube.com/@angolaosc"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    Instagram
+                    Youtube
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href={"#"}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
-                  >
-                    Discord
-                  </Link>
-                </li>
+                
               </ul>
             </div>
             <div className="w-52">
@@ -119,7 +119,7 @@ function Footer({ ...rest }) {
               <ul className="flex flex-col">
                 <li>
                   <Link
-                    href={"#"}
+                    href={"https://mentorship.aosc.social"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Programa de Mentoria
@@ -127,10 +127,10 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <Link
-                    href={"#TOSCA"}
+                    href={"https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"}
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    TOSCA
+                    The Open Source Café(TOSCA)
                   </Link>
                 </li>
               </ul>
@@ -141,8 +141,11 @@ function Footer({ ...rest }) {
           <p className="text-gray-600 text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
-            Todos os direitos reservados
-          </p>
+            Todos os direitos reservados. 
+            <br />
+            <a href="https://github.com/angolaosc/aosc.social" > ver código fonte, </a>
+            licenciado sob <a href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE">Licença Apache-2.0</a>  
+          </p> 
           <Link
             href={"#topo"}
             className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"

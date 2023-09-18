@@ -17,7 +17,7 @@ function Headline({ ...rest }) {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Crie um impacto <br className="hidden xl:block" />{" "}
+          Criando um impacto <br className="hidden xl:block" />{" "}
           significativo na inovação tecnológica do país.
         </motion.h1>
         <p
@@ -28,9 +28,8 @@ function Headline({ ...rest }) {
           // data-scroll-repeat
           className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start"
         >
-          O nosso objetivo é permitir que os programadores
-          angolanos contribuam ativamente para projetos de
-          código aberto internacionalmente.
+          A nossa missão é promover o desenvolvimento e 
+          adoção de Free and Open-source Software(FOSS) em Angola.
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
