@@ -43,8 +43,8 @@ export default function Home() {
         className="py-52"
       />
       <Motivations />
-      <Program />
-      <Benefits />
+      {/* <Program /> */}
+      {/* <Benefits /> */}
       <HowItWorks
         title="Como isto funciona?"
         data={HOW_IT_WORKS}

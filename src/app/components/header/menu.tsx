@@ -20,7 +20,13 @@ function Menu({ items }: MenuProps) {
             className="text-[#646464] text-[16px]"
             key={id}
           >
-            <Link href={url}>{text}</Link>
+            {url.indexOf("http") !== -1 ? (
+              <Link href={url} target="_blank">
+                {text}
+              </Link>
+            ) : (
+              <Link href={url}>{text}</Link>
+            )}
           </li>
         ))}
       </ul>
