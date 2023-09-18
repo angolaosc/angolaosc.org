@@ -12,6 +12,7 @@ import OurTeam from "./components/our-team";
 import Program from "./components/program";
 import MobileHeader from "./components/header/mobile";
 import { MENU } from "@/utils/data/menu";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
         data={HOW_IT_WORKS}
       />
       <OurTeam />
+      <Footer />
     </main>
   );
 }
