@@ -4,7 +4,7 @@ import React from "react";
 
 function OurTeam() {
   return (
-    <section className="pt-64">
+    <section className="pt-64" id="team">
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
         <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
           Conheça o nosso team incrível
@@ -20,17 +20,17 @@ function OurTeam() {
             }) => (
               <div
                 key={id}
-                className="md:max-w-[280px] w-full"
+                className="md:max-w-[280px] w-full group"
               >
                 <Image
                   src={avatar}
                   alt={name}
                   width={384}
                   height={318}
-                  className="h-64 object-fill w-full aspect-video rounded-xl"
+                  className="h-64 w-full object-fill rounded-xl"
                 />
-                <div className="py-8 md:pl-7">
-                  <p className="text-gray-500 text-base font-medium leading-[130%]">
+                <div className="py-8 md:pl-7 max-h-80">
+                  <p className="text-gray-500 text-base font-medium leading-[130%] lg:opacity-0 lg:max-h-0 overflow-hidden lg:group-hover:opacity-100 lg:group-hover:max-h-96 transition-all duration-300">
                     {description}
                   </p>
                   <div className="flex gap-1 flex-col ">

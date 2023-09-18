@@ -45,7 +45,13 @@ function MobileHeader({ items }: MenuProps) {
                 className="text-white text-lg font-bold"
                 key={id}
               >
-                <Link href={url}>{text}</Link>
+                {url.indexOf("http") !== -1 ? (
+                  <Link href={url} target="_blank">
+                    {text}
+                  </Link>
+                ) : (
+                  <Link href={url}>{text}</Link>
+                )}
               </li>
             ))}
           </ul>

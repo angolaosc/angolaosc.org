@@ -13,7 +13,11 @@ function Header({ ...rest }) {
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
         <Logo />
         <Menu items={MENU} />
-        <ButtonLink href={"/"} text={"Junte-se a nós"} />
+        <ButtonLink
+          href={"https://opencollective.com/aosc"}
+          target="_blank"
+          text={"Faça uma doação"}
+        />
       </div>
       <hr />
     </header>

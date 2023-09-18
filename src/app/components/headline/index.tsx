@@ -105,7 +105,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Github
+          Software Livre
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -117,7 +117,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Git
+          Colaboração
         </motion.span>
         <Image
           src={"/hero.png"}

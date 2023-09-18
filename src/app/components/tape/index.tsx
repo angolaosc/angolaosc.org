@@ -31,19 +31,21 @@ function Tape({
         {[...Array(2)].map((_, idx) => (
           <span key={idx} className="text-2xl font-bold">
             <ul className="flex gap-4 md:gap-8">
-              <li>Github</li>
-              <li>.</li>
-              <li>Código Aberto</li>
+              <li>Open Source</li>
               <li>.</li>
               <li>Software Livre</li>
               <li>.</li>
-              <li>Github</li>
+              <li>Comunidade</li>
               <li>.</li>
-              <li>Github</li>
+              <li>Colaboração</li>
               <li>.</li>
-              <li>Github</li>
+              <li>Open Source</li>
               <li>.</li>
-              <li>Github</li>
+              <li>Software Livre</li>
+              <li>.</li>
+              <li>Comunidade</li>
+              <li>.</li>
+              <li>Colaboração</li>
             </ul>
           </span>
         ))}

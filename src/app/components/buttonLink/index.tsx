@@ -6,13 +6,15 @@ interface iButtonLink {
   href: string;
   text: string;
   className?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
 }
 
-function ButtonLink({
+const ButtonLink: React.FC<iButtonLink> = ({
   href,
   text,
   className,
-}: iButtonLink) {
+  target,
+}) => {
   return (
     <Link
       className={twMerge(
@@ -20,10 +22,11 @@ function ButtonLink({
         className,
       )}
       href={href}
+      target={target}
     >
       {text}
     </Link>
   );
-}
+};
 
 export default ButtonLink;
