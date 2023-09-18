@@ -7,7 +7,7 @@ function OurTeam() {
     <section className="pt-64" id="team">
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
         <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
-          Conheça o nosso team incrível
+          Conheça o nosso core team incrível
         </h2>
         <div className="grid xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {TEAM.map(
