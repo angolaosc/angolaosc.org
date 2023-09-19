@@ -49,7 +49,7 @@ function Program() {
             </li>
           </ul>
           <ButtonLink
-            href="/"
+            href="https://mentorship.aosc.social/"
             text="Conhecer Programa de Mentoria"
             className="w-fit"
           />
