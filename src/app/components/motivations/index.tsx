@@ -18,9 +18,7 @@ function Motivations({ className, ...rest }: any) {
             Nossas Motivações
           </h2>
           <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
-            It’s time to take control of your books. Buy our
-            software so you can feel like you’re doing
-            something productive.
+            Somos guiados por um conjunto de motivações que nos ajudam a efetivamente alcançar a nossa missão.
           </p>
           <ButtonLink
             href={"/"}

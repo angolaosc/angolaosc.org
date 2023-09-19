@@ -15,7 +15,7 @@ export const PURPOSES = [
       <Coffee weight="duotone" size={40} color="#FE5C5C" />
     ),
     title: "Acelerar o desenvolvimento de código aberto.",
-    body: "Oferecer recursos e programas de mentoria para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no código aberto.",
+    body: "Oferecer recursos e programas de mentoria, workshops, e outros eventos para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no código aberto.",
   },
   {
     id: 3,
