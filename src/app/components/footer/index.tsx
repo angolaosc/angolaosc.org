@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { animateScroll } from "react-scroll";
 import ButtonLink from "../buttonLink";
 import Link from "next/link";
 import Image from "next/image";
@@ -143,12 +143,12 @@ function Footer({ ...rest }) {
             <br />
             Todos os direitos reservados
           </p>
-          <Link
-            href={"#topo"}
+          <button
+            onClick={() => animateScroll.scrollToTop()}
             className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
             Voltar ao topo
-          </Link>
+          </button>
         </div>
       </div>
     </section>

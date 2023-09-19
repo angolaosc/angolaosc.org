@@ -2,31 +2,31 @@ export const MENU = [
   {
     id: 1,
     text: "Início",
-    url: "#home",
+    url: "top",
   },
   {
     id: 2,
     text: "Programa de Mentoria",
-    url: "https://mentorship.aosc.social/",
+    url: "program",
   },
   {
     id: 3,
     text: "Equipa",
-    url: "/#team",
+    url: "our-team",
   },
   {
     id: 4,
     text: "Eventos",
-    url: "#events",
+    url: "events",
   },
   {
     id: 5,
     text: "TOSCA",
-    url: "#tosca",
+    url: "tosca",
   },
   {
     id: 5,
-    text: "Sobre",
-    url: "#about",
+    text: "Motivações",
+    url: "motivations",
   },
 ];

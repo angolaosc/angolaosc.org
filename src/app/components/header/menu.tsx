@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Link, Element } from "react-scroll";
+import NextLink from "next/link";
 import React from "react";
 
 type MenuItem = {
@@ -21,11 +22,22 @@ function Menu({ items }: MenuProps) {
             key={id}
           >
             {url.indexOf("http") !== -1 ? (
-              <Link href={url} target="_blank">
+              <NextLink
+                href={url}
+                target="_blank"
+                className="cursor-pointer hover:text-red-600 duration-300 ease-in"
+              >
+                {text}
+              </NextLink>
+            ) : (
+              <Link
+                className="cursor-pointer hover:text-red-600 duration-300 ease-in"
+                smooth={true}
+                duration={1400}
+                to={url}
+              >
                 {text}
               </Link>
-            ) : (
-              <Link href={url}>{text}</Link>
             )}
           </li>
         ))}

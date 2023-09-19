@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Check } from "phosphor-react";
 import { title } from "process";
 import React from "react";
+import ButtonLink from "../buttonLink";
 
 function Program() {
   return (
@@ -11,6 +12,7 @@ function Program() {
           <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%]">
             Programa de Mentoria
           </h2>
+
           <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4">
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
@@ -46,6 +48,11 @@ function Program() {
               </div>
             </li>
           </ul>
+          <ButtonLink
+            href="/"
+            text="Conhecer Programa de Mentoria"
+            className="w-fit"
+          />
         </div>
         <div className="w-full xl:w-[448px]  bg-red-500 h-[624px] rounded-xl xl:flex items-end justify-center relative hidden">
           <div className="bg-white bounce p-4 rounded-xl flex gap-2 absolute bottom-8 left-[50%] select-none pointer-events-none ">

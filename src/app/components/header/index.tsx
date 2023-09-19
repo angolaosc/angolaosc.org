@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./logo";
 import Menu from "./menu";
 import ButtonLink from "../buttonLink";
-import { MENU } from "@/utils/data/menu";
+import { MENU } from "./data";
 
 function Header({ ...rest }) {
   return (
