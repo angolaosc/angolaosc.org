@@ -26,8 +26,8 @@ function OurTeam() {
                   src={avatar}
                   alt={name}
                   width={384}
-                  style={{objectFit:'cover', objectPosition:'top'}}
                   height={318}
+                  style={{objectFit:'cover', objectPosition:'top'}}
                   className="h-64 w-full object-fill rounded-xl"
                 />
                 <div className="py-8 md:pl-7 max-h-80">
