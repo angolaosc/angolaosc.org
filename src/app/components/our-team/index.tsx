@@ -27,8 +27,8 @@ function OurTeam() {
                   alt={name}
                   width={384}
                   height={318}
-                  style={{objectFit:'cover', objectPosition:'top'}}
                   className="h-64 w-full object-fill rounded-xl"
+                  style={{objectFit:'cover', objectPosition:'top'}}
                 />
                 <div className="py-8 md:pl-7 max-h-80">
                   <p className="text-gray-500 text-base font-medium leading-[130%] lg:opacity-0 lg:max-h-0 overflow-hidden lg:group-hover:opacity-100 lg:group-hover:max-h-96 transition-all duration-300">
