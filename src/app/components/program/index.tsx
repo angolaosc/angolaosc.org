@@ -21,29 +21,30 @@ function Program() {
                 </h3>
                 <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                   Inclui uma semana de workshops online e
-                  treinamentos introdutórios
+                  treinamentos introdutórios sobre Git e outras ferramentas essenciais 
+                  para o desenvolvimento de software open source.
                 </p>
               </div>
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
-                  Workshops
+                Experiência Prática
                 </h3>
                 <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
-                  Inclui uma semana de workshops online e
-                  treinamentos introdutórios
+                Conecta mentores experientes, colaboradores talentosos
+                e organizações de software livre para contribuir para projetos de open source.
                 </p>
               </div>
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
-                  Workshops
+                  Desenvolvimento de Carreira
                 </h3>
                 <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
-                  Inclui uma semana de workshops online e
-                  treinamentos introdutórios
+                 Fornece uma base sólida de conhecimento e habilidades para desenvolvedores angolanos
+                 que desejam contribuir para projetos de software livre.
                 </p>
               </div>
             </li>
@@ -60,7 +61,7 @@ function Program() {
               <Check size={16} weight="bold" color="#fff" />
             </div>
             <p className="text-black text-base leading-[120%] font-semibold max-w-xs">
-              +40 mentorados
+              +12 mentorados
             </p>
           </div>
           <div className="bg-white p-8 rounded-[50%] absolute left-[-50px] top-[130px] spinner">
