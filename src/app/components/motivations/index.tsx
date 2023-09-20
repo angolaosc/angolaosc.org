@@ -23,7 +23,7 @@ function Motivations({ className, ...rest }: any) {
             missão.
           </p>
           <ButtonLink
-            href={"https://www.facebook.com/aoscangola"}
+            href={"https://linktr.ee/angolaosc"}
             text={"Juntar-me a comunidade"}
             target="_blank"
             className="md:max-w-fit w-full text-center justify-center md:justify-start"

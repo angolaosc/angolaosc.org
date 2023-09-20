@@ -79,7 +79,7 @@ function Footer({ ...rest }) {
                     target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    Eventos
+                    AOSFest 2023
                   </NextLink>
                 </li>
               </ul>

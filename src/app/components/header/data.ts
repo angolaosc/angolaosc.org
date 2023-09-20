@@ -11,7 +11,7 @@ export const MENU = [
   },
   {
     id: 3,
-    text: "Programa de Mentoria",
+    text: "AOSC Mentorship",
     url: "program",
   },
   {
@@ -21,7 +21,7 @@ export const MENU = [
   },
   {
     id: 4,
-    text: "Eventos",
+    text: "AOSFest 2023",
     url: "https://fest.aosc.social/",
   },
   {
