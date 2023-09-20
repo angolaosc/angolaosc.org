@@ -29,7 +29,7 @@ function Headline({ ...rest }) {
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-            href={"https://www.facebook.com/aoscangola"}
+            href={"https://linktr.ee/angolaoschttps://linktr.ee/angolaosc"}
             text={"Juntar-me a comunidade"}
             target="_blank"
           />
