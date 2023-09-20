@@ -182,12 +182,6 @@ function Footer({ ...rest }) {
               Licença Apache-2.0
             </NextLink>
           </p>
-          <NextLink
-            target="_blank"
-            href="https://github.com/danguya"
-          >
-            ❤️ With love, Wilmy Danguya
-          </NextLink>
           <button
             onClick={() => animateScroll.scrollToTop()}
             className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
