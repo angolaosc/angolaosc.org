@@ -51,6 +51,7 @@ function Program() {
           <ButtonLink
             href="https://mentorship.aosc.social/"
             text="Conhecer Programa de Mentoria"
+            target="_blank"
             className="w-fit"
           />
         </div>

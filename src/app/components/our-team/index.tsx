@@ -4,7 +4,7 @@ import React from "react";
 
 function OurTeam() {
   return (
-    <section className="pt-64" id="team">
+    <section className="py-28 pb-96" id="team">
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
         <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
           Conheça o nosso core team incrível

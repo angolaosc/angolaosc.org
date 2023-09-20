@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ButtonLink from "../buttonLink";
 import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
 
 function Headline({ ...rest }) {
@@ -13,30 +14,34 @@ function Headline({ ...rest }) {
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
           className="md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 0.5 }}
         >
-          Criando um impacto <br className="hidden xl:block" />{" "}
-          significativo na inovação tecnológica do país.
+          Criando um impacto{" "}
+          <br className="hidden xl:block" /> significativo
+          na inovação tecnológica do país.
         </motion.h1>
-        <p
-          // data-scroll
-          // data-scroll-delay="0.2"
-          // data-scroll-speed="6"
-          // data-scroll-call="dynamicColor"
-          // data-scroll-repeat
-          className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start"
-        >
-          A nossa missão é promover o desenvolvimento e 
-          adoção de Free and Open-source Software(FOSS) em Angola.
+        <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
+          A nossa missão é promover o desenvolvimento e
+          adoção de Free and Open-source Software(FOSS) em
+          Angola.
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-            href={"/"}
+            href={"https://www.facebook.com/aoscangola"}
             text={"Juntar-me a comunidade"}
+            target="_blank"
           />
-          <Link href={"/"}>Saiba Mais</Link>
+          <LinkScroll
+            to={"purposes"}
+            smooth={true}
+            duration={1400}
+            delay={0.8}
+            className="cursor-pointer"
+          >
+            Saiba Mais
+          </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
           <div className="flex -space-x-3 overflow-hidden p-2 px-0">
@@ -77,7 +82,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 200 membros
+            Junte-se a mais de 2,700 membros
           </span>
         </div>
       </div>

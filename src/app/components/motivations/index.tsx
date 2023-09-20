@@ -18,11 +18,14 @@ function Motivations({ className, ...rest }: any) {
             Nossas Motivações
           </h2>
           <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
-            Somos guiados por um conjunto de motivações que nos ajudam a efetivamente alcançar a nossa missão.
+            Somos guiados por um conjunto de motivações que
+            nos ajudam a efetivamente alcançar a nossa
+            missão.
           </p>
           <ButtonLink
-            href={"/"}
+            href={"https://www.facebook.com/aoscangola"}
             text={"Juntar-me a comunidade"}
+            target="_blank"
             className="md:max-w-fit w-full text-center justify-center md:justify-start"
           />
         </div>

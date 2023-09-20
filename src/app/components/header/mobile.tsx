@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "./logo";
-import Link from "next/link";
+import { Link } from "react-scroll";
+import NextLink from "next/link";
 
 type MenuItem = {
   id: number;
@@ -46,11 +47,24 @@ function MobileHeader({ items }: MenuProps) {
                 key={id}
               >
                 {url.indexOf("http") !== -1 ? (
-                  <Link href={url} target="_blank">
+                  <NextLink
+                    onClick={() => setIsOpen(false)}
+                    href={url}
+                    target="_blank"
+                    className="cursor-pointer hover:text-black duration-300 ease-in"
+                  >
+                    {text}
+                  </NextLink>
+                ) : (
+                  <Link
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="cursor-pointer hover:text-black duration-300 ease-in"
+                    smooth={true}
+                    duration={1400}
+                    to={url}
+                  >
                     {text}
                   </Link>
-                ) : (
-                  <Link href={url}>{text}</Link>
                 )}
               </li>
             ))}

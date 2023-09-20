@@ -1,11 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import React from "react";
 
 function Logo() {
   return (
     <Link
-      href={"/"}
+      smooth={true}
+      duration={1400}
+      to={"top"}
       className="max-w-[200px] flex gap-2 items-center"
     >
       <Image

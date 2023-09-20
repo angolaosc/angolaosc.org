@@ -1,7 +1,8 @@
 import React from "react";
 import { animateScroll } from "react-scroll";
 import ButtonLink from "../buttonLink";
-import Link from "next/link";
+import { Link } from "react-scroll";
+import NextLink from "next/link";
 import Image from "next/image";
 
 function Footer({ ...rest }) {
@@ -44,35 +45,42 @@ function Footer({ ...rest }) {
               <ul className="flex flex-col">
                 <li>
                   <Link
-                    href={"#"}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    to={"top"}
+                    smooth={true}
+                    duration={1400}
+                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Início
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={"#"}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    to={"motivations"}
+                    smooth={true}
+                    duration={1400}
+                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    TOSCA
+                    Motivações
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={"#"}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    to={"our-team"}
+                    smooth={true}
+                    duration={1400}
+                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Equipa
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href={"#"}
+                  <NextLink
+                    href={"https://fest.aosc.social/"}
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Eventos
-                  </Link>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -81,44 +89,48 @@ function Footer({ ...rest }) {
               <h3 className="text-xl">Comunidades</h3>
               <ul className="flex flex-col">
                 <li>
-                  <Link
+                  <NextLink
                     href={
                       "https://discord.com/invite/tuUDNdRzvz"
                     }
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Discord
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link
+                  <NextLink
                     href={
                       "https://www.facebook.com/aoscangola"
                     }
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Facebook
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link
+                  <NextLink
                     href={
                       "https://www.linkedin.com/company/angola-open-source-community"
                     }
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Linkedin
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link
+                  <NextLink
                     href={
                       "https://www.youtube.com/@angolaosc"
                     }
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Youtube
-                  </Link>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -126,22 +138,24 @@ function Footer({ ...rest }) {
               <h3 className="text-xl">Projectos</h3>
               <ul className="flex flex-col">
                 <li>
-                  <Link
+                  <NextLink
                     href={"https://mentorship.aosc.social"}
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Programa de Mentoria
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link
+                  <NextLink
                     href={
                       "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"
                     }
+                    target="_blank"
                     className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     The Open Source Café(TOSCA)
-                  </Link>
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -153,15 +167,27 @@ function Footer({ ...rest }) {
             <br />
             Todos os direitos reservados.
             <br />
-            <a href="https://github.com/angolaosc/aosc.social">
+            <NextLink
+              target="_blank"
+              href="https://github.com/angolaosc/aosc.social"
+            >
               {" "}
               ver código fonte,{" "}
-            </a>
+            </NextLink>
             licenciado sob{" "}
-            <a href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE">
+            <NextLink
+              target="_blank"
+              href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE"
+            >
               Licença Apache-2.0
-            </a>
+            </NextLink>
           </p>
+          <NextLink
+            target="_blank"
+            href="https://github.com/danguya"
+          >
+            ❤️ With love, Wilmy Danguya
+          </NextLink>
           <button
             onClick={() => animateScroll.scrollToTop()}
             className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
