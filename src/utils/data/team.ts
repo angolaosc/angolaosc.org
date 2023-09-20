@@ -20,18 +20,18 @@ export const TEAM = [
     id: 3,
     name: "Cláudio da Silva",
     ocupation: "Core member | Software Developer",
-    avatar: "/avatar.avif",
-    description:
-      "Conheci meu amor através dessa plataforma e não poderia estar mais feliz.",
+    avatar: "/claudio.jpeg",
+    description: "",
   },
   {
     id: 4,
     name: "Wilmy Danguya",
-    ocupation: "Core member | Software Developer | UI Designer",
+    ocupation:
+      "Core member | Software Developer | UI Designer",
     avatar: "/danguya.jpg",
     description:
       "Apaixonado por desenvolvimento de software, design e educação.",
-  }
+  },
   // {
   //   id: 5,
   //   name: "Lázaro Inácio",
