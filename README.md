@@ -4,7 +4,15 @@ Site oficial da Angola Open-source Community
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn add
+```
+
+second, run the development server:
 
 ```bash
 npm run dev
