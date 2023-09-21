@@ -15,17 +15,17 @@ export const MENU = [
     url: "program",
   },
   {
-    id: 3,
+    id: 4,
     text: "Equipa",
     url: "our-team",
   },
   {
-    id: 4,
+    id: 5,
     text: "AOSFest 2023",
     url: "https://fest.aosc.social/",
   },
   {
-    id: 5,
+    id: 6,
     text: "TOSCA",
     url: "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy",
   },
