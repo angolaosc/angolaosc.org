@@ -18,7 +18,7 @@ const ButtonLink: React.FC<iButtonLink> = ({
   return (
     <Link
       className={twMerge(
-        "bg-red-500 text-white text-base hover:bg-red-400 transition-all ease-in flex px-4 font-semibold py-3 rounded-md",
+        "bg-red-500 text-white text-base hover:bg-red-400 hover:no-underline transition-all ease-in flex px-4 font-semibold py-3 rounded-md",
         className,
       )}
       href={href}

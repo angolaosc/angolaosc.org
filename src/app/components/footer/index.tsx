@@ -28,7 +28,7 @@ function Footer({ ...rest }) {
                   Angola OpenSource Community
                 </h3>
               </div>
-              <p className="text-gray-600 w-72">
+              <p className=" w-72">
                 We aim to develop and promote FOSS in
                 Angola.
               </p>
@@ -48,7 +48,7 @@ function Footer({ ...rest }) {
                     to={"top"}
                     smooth={true}
                     duration={1400}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Início
                   </Link>
@@ -58,7 +58,7 @@ function Footer({ ...rest }) {
                     to={"motivations"}
                     smooth={true}
                     duration={1400}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Motivações
                   </Link>
@@ -68,7 +68,7 @@ function Footer({ ...rest }) {
                     to={"our-team"}
                     smooth={true}
                     duration={1400}
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Equipa
                   </Link>
@@ -77,7 +77,7 @@ function Footer({ ...rest }) {
                   <NextLink
                     href={"https://fest.aosc.social/"}
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     AOSFest 2023
                   </NextLink>
@@ -94,7 +94,7 @@ function Footer({ ...rest }) {
                       "https://discord.com/invite/tuUDNdRzvz"
                     }
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Discord
                   </NextLink>
@@ -105,7 +105,7 @@ function Footer({ ...rest }) {
                       "https://www.facebook.com/aoscangola"
                     }
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Facebook
                   </NextLink>
@@ -116,7 +116,7 @@ function Footer({ ...rest }) {
                       "https://www.linkedin.com/company/angola-open-source-community"
                     }
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Linkedin
                   </NextLink>
@@ -127,7 +127,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/@angolaosc"
                     }
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Youtube
                   </NextLink>
@@ -141,7 +141,7 @@ function Footer({ ...rest }) {
                   <NextLink
                     href={"https://mentorship.aosc.social"}
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Programa de Mentoria
                   </NextLink>
@@ -152,7 +152,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"
                     }
                     target="_blank"
-                    className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     The Open Source Café(TOSCA)
                   </NextLink>
@@ -162,7 +162,7 @@ function Footer({ ...rest }) {
           </div>
         </div>
         <div className="flex justify-center items-center w-full py-6 border-t flex-col gap-6 md:flex-row md:justify-between">
-          <p className="text-gray-600 text-center md:text-start">
+          <p className=" text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
             Todos os direitos reservados.
@@ -184,7 +184,7 @@ function Footer({ ...rest }) {
           </p>
           <button
             onClick={() => animateScroll.scrollToTop()}
-            className="text-gray-600 hover:text-black transition-colors duration-[0.3s] ease-linear"
+            className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
             Voltar ao topo
           </button>
