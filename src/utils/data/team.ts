@@ -28,7 +28,7 @@ export const TEAM = [
     name: "Wilmy Danguya",
     ocupation:
       "Core member | Software Developer | UI Designer",
-    avatar: "/danguya.jpg",
+    avatar: "/danguya.jpeg",
     description:
       "Apaixonado por desenvolvimento de software, design e educação.",
   },

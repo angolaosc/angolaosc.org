@@ -8,7 +8,7 @@ function Logo() {
       smooth={true}
       duration={1400}
       to={"top"}
-      className="max-w-[200px] flex gap-2 items-center"
+      className="max-w-[200px] flex gap-2 items-center hover:no-underline cursor-pointer"
     >
       <Image
         src={"/logo-aosc.svg"}

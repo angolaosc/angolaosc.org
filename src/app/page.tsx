@@ -18,8 +18,6 @@ export default function Home() {
       data-scroll-container
       className="flex flex-col items-center"
     >
-      <Element name="top" />
-
       <div className="gap-2 items-center justify-center pointer-events-none select-none z-50 fixed top-0 bg-violet-600 right-0 left-0 p-6 py-2 hidden lg:flex">
         <i>🇦🇴</i>
         <span className="text-white">
@@ -31,8 +29,9 @@ export default function Home() {
 
       <Header data-scroll />
       <MobileHeader items={MENU} />
-
-      <Headline data-scroll />
+      <Element name="top">
+        <Headline data-scroll />
+      </Element>
       <Tape className="bg-red-400 text-black " />
       <Tape
         direction="left"

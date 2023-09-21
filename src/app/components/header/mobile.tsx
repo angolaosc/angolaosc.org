@@ -51,14 +51,14 @@ function MobileHeader({ items }: MenuProps) {
                     onClick={() => setIsOpen(false)}
                     href={url}
                     target="_blank"
-                    className="cursor-pointer hover:text-black duration-300 ease-in"
+                    className="cursor-pointer hover:text-black duration-300 ease-in text-white"
                   >
                     {text}
                   </NextLink>
                 ) : (
                   <Link
                     onClick={() => setIsOpen(!isOpen)}
-                    className="cursor-pointer hover:text-black duration-300 ease-in"
+                    className="cursor-pointer hover:text-black duration-300 ease-in text-white"
                     smooth={true}
                     duration={1400}
                     to={url}

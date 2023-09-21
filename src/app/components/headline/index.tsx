@@ -29,7 +29,9 @@ function Headline({ ...rest }) {
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-            href={"https://linktr.ee/angolaoschttps://linktr.ee/angolaosc"}
+            href={
+              "https://linktr.ee/angolaoschttps://linktr.ee/angolaosc"
+            }
             text={"Juntar-me a comunidade"}
             target="_blank"
           />
@@ -38,7 +40,7 @@ function Headline({ ...rest }) {
             smooth={true}
             duration={1400}
             delay={0.8}
-            className="cursor-pointer"
+            className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
             Saiba Mais
           </LinkScroll>
