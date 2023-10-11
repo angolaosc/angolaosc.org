@@ -1,21 +1,24 @@
 # AOSC - Website
 
-Site oficial da Angola Open-source Community
+Official website of the Angola Open-source Community
 
 ## Getting Started
 
-Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu sistema. Em seguida, siga estes passos:
+Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on your system. Then, follow these steps:
 
+```bash
 npm run dev
-# ou
+# or
 yarn dev
-# ou
+# or
 pnpm dev
 
-Este comando instalará todas as dependências necessárias para o projeto.
 
-Executando o Servidor de Desenvolvimento
-Para iniciar o servidor de desenvolvimento e visualizar o site, execute um dos seguintes comandos
+This command will install all the necessary dependencies for the project.
+
+Running the Development Server
+To start the development server and view the site, execute one of the following commands:
+
 ```bash
 npm run dev
 # or
