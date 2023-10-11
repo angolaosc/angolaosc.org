@@ -8,10 +8,20 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on
 
 ```bash
 npm run dev
+# This command runs the "dev" script using npm. "npm" stands for Node Package Manager, and it's a widely used tool for managing packages and scripts in Node.js projects.
+
 # or
+# This is a comment to indicate that you can use the next alternative command if you prefer.
+
 yarn dev
+# This command runs the "dev" script using Yarn, another package management tool similar to npm, but known for being faster and more efficient in terms of performance.
+
 # or
+# This is another comment to indicate that you can use the next alternative command if you prefer.
+
 pnpm dev
+# This command runs the "dev" script using pnpm, yet another alternative to npm and Yarn, designed to be even more efficient in terms of disk space usage and speed compared to other package management tools.
+In summary, the code provides three options to run the "dev" script in a Node.js project, allowing the developer to choose between npm, Yarn, or pnpm as the package management tool. This can be useful because different teams or projects may have different preferences when it comes to package management tools.
 
 
 This command will install all the necessary dependencies for the project.
