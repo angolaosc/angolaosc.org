@@ -4,13 +4,12 @@ Site oficial da Angola Open-source Community
 
 ## Getting Started
 
-First, install the dependencies:
+Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu sistema. Em seguida, siga estes passos:
 
-```bash
+```shell
 npm install
-# or
-yarn add
-```
+# ou
+yarn
 
 second, run the development server:
 
