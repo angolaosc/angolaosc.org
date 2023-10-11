@@ -6,13 +6,16 @@ Site oficial da Angola Open-source Community
 
 Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu sistema. Em seguida, siga estes passos:
 
-```shell
-npm install
+npm run dev
 # ou
-yarn
+yarn dev
+# ou
+pnpm dev
 
-second, run the development server:
+Este comando instalará todas as dependências necessárias para o projeto.
 
+Executando o Servidor de Desenvolvimento
+Para iniciar o servidor de desenvolvimento e visualizar o site, execute um dos seguintes comandos
 ```bash
 npm run dev
 # or
