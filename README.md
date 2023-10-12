@@ -15,7 +15,20 @@ The "Angola Open Source Community" is an official platform for collaborations on
 
 News and Updates: Keeping contributors informed about news and updates related to the world of open source.
 
-Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on your system. Then, follow these steps:
+Getting Started
+
+Before you begin, make sure you have Node.js installed on your system. Then, follow these steps:
+
+To start exploring the Open Source Contributions website project, follow these steps:
+
+Clone the repository on your computer (Optional).
+Download the project.
+Navigate to the project's root directory.
+
+Install the dependencies with npm install.
+Start the development server with npm start.
+Getting Started
+Execute the following commands in Visual Studio Code or CMD.
 
 ```bash
 npm run dev
