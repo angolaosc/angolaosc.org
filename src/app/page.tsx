@@ -1,4 +1,6 @@
 "use client";
+// Importação de componentes necessários
+
 import Header from "./components/header";
 import Headline from "./components/headline";
 import Tape from "./components/tape";
@@ -11,6 +13,8 @@ import Program from "./components/program";
 import MobileHeader from "./components/header/mobile";
 import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
+
+// Componente principal que representa a página inicial
 
 export default function Home() {
   return (
