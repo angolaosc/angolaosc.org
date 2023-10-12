@@ -1,8 +1,19 @@
-# AOSC - Website
+# AOSC - Official Website
 
-Official website of the Angola Open-source Community
+Project Overview - Angola Open Source Community Website
 
-## Getting Started
+This is the main README of the project for Open Source Contributions. The project is developed using React and JavaScript and is accompanied by READMEs in various languages, including:
+
+panish
+Portuguese
+French
+Russian
+English
+Project Description
+
+The "Angola Open Source Community" is an official platform for collaborations on open-source projects. This website is designed for:
+
+News and Updates: Keeping contributors informed about news and updates related to the world of open source.
 
 Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on your system. Then, follow these steps:
 
