@@ -1,6 +1,7 @@
 import { render, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'next-themes';
 import ButtonDarkTheme from './../src/app/components/buttonDarkTheme';
+import LanguageSelector from './../src/app/components/languageSelector';
 
 window.matchMedia = () => {
   return {
@@ -22,4 +23,8 @@ test('toggling dark mode', () => {
 
   fireEvent.click(button);
 });
-
+test('Verifique se o ícone "Translate" está na tela', () => {
+  const { getByTestId } = render(<LanguageSelector />);
+  const translateIcon = getByTestId('translate-icon');
+  expect(translateIcon).toBeTruthy();
+})

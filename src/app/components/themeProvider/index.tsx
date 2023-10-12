@@ -1,6 +1,9 @@
 "use client"
-import { ThemeProvider as NextThemeProvider } from "next-themes";
+import { ThemeProvider } from 'next-themes';
+import React, { ReactNode } from 'react';
 
-export default function ThemeProvider({ children }): React.PropsWidthChildren {
-  return <NextThemeProvider>{children}</NextThemeProvider>
-}
+const NextThemeProvider = ({ children }: { children: ReactNode }) => {
+  return <ThemeProvider>{children}</ThemeProvider>;
+};
+
+export default NextThemeProvider;

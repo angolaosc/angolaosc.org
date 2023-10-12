@@ -1,4 +1,6 @@
 "use client";
+import "../i18n";
+import { useTranslation } from "react-i18next";
 import Header from "./components/header";
 import Headline from "./components/headline";
 import Tape from "./components/tape";
@@ -13,6 +15,7 @@ import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <main
       data-scroll-container
@@ -22,8 +25,9 @@ export default function Home() {
         <i>🇦🇴</i>
         <span className="text-white">
           {" "}
-          Participe agora do primeiro evento presencial da
-          Angola Open Source Commnunity em Luanda.
+          {t(
+            "Participe agora do primeiro evento presencial da Angola Open Source Commnunity em Luanda.",
+          )}
         </span>
       </div>
 

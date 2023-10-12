@@ -4,8 +4,12 @@ import ButtonLink from "../buttonLink";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 function Headline({ ...rest }) {
+
+  const { t } = useTranslation();
+
   return (
     <section
       className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start pt-32 "
@@ -18,14 +22,11 @@ function Headline({ ...rest }) {
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.5 }}
         >
-          Criando um impacto{" "}
-          <br className="hidden xl:block" /> significativo
-          na inovação tecnológica do país.
+          {t("Criando um impacto")}{" "}
+          <br className="hidden xl:block" /> {t("significativo na inovação tecnológica do país.")}
         </motion.h1>
         <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-          A nossa missão é promover o desenvolvimento e
-          adoção de Free and Open-source Software(FOSS) em
-          Angola.
+          {t("A nossa missão é promover o desenvolvimento e adoção de Free and Open-source Software(FOSS) em Angola.")}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
@@ -42,7 +43,7 @@ function Headline({ ...rest }) {
             delay={0.8}
             className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-            Saiba Mais
+            {t("Saiba Mais")}
           </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
@@ -84,7 +85,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 2,700 membros
+            {t("Junte-se a mais de 2,700 membros")}
           </span>
         </div>
       </div>
@@ -123,7 +124,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Colaboração
+          {t("Colaboração")}
         </motion.span>
         <Image
           src={"/hero.png"}
