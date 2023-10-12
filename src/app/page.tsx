@@ -14,6 +14,8 @@ import MobileHeader from "./components/header/mobile";
 import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
 
+
+
 // Componente principal que representa a página inicial
 
 export default function Home() {
@@ -30,6 +32,8 @@ export default function Home() {
           Angola Open Source Commnunity em Luanda.
         </span>
       </div>
+
+  
 
       <Header data-scroll />
       <MobileHeader items={MENU} />
