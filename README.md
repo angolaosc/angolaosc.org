@@ -24,11 +24,12 @@ To start exploring the Open Source Contributions website project, follow these s
 Clone the repository on your computer (Optional).
 Download the project.
 Navigate to the project's root directory.
-
+```bash
 Install the dependencies with npm install.
 Start the development server with npm start.
 Getting Started
 Execute the following commands in Visual Studio Code or CMD.
+```bash
 
 ```bash
 npm run dev
