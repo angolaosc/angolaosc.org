@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  @apply bg-stone-100 text-stone-900 dark:bg-slate-900 dark:text-stone-100 transition-colors duration-200;
+}
+
+body * {
+  @apply transition-colors duration-200;
+}
+
 @layer base {
   a {
     @apply text-blue-600;

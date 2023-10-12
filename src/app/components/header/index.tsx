@@ -2,17 +2,19 @@ import React from "react";
 import Logo from "./logo";
 import Menu from "./menu";
 import ButtonLink from "../buttonLink";
+import ButtonDarkTheme from "../buttonDarkTheme";
 import { MENU } from "./data";
 
 function Header({ ...rest }) {
   return (
     <header
-      className="w-full flex-col items-center justify-center px-6 hidden lg:flex fixed top-10 bg-white z-50"
+      className="w-full flex-col items-center justify-center px-6 hidden lg:flex fixed top-10 z-50"
       {...rest}
     >
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
         <Logo />
         <Menu items={MENU} />
+        <ButtonDarkTheme />
         <ButtonLink
           href={"https://opencollective.com/aosc"}
           target="_blank"
