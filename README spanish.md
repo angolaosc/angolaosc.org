@@ -1,47 +1,46 @@
-# AOSC - Sitio Web
-
 # AOSC - Sitio Oficial
 
-Presentación del Proyecto - Sitio del Hackathon Angola 2023
+Presentación del Proyecto - Sitio de la Comunidad de Código Abierto Angola
 
-Este es el archivo README principal del proyecto del sitio para el Hackathon Angola 2023, una emocionante competencia de desarrollo e innovación. El proyecto se desarrolla utilizando React y JavaScript y se acompaña de archivos README en los siguientes idiomas:
+Este es el README principal del proyecto del sitio para Contribuciones de Código Abierto. El proyecto está desarrollado utilizando React y JavaScript y se acompaña de READMEs en varios idiomas, incluyendo:
 
-- Español
-- Portugués
-- Francés
-- Ruso
-- Inglés
+Español
+Portugués
+Francés
+Ruso
+Inglés
 
 Descripción del Proyecto
-El "Sitio web del Hackathon Angola 2023" es la plataforma oficial para el evento del Hackathon de este año en Angola. Este sitio web está diseñado para:
+"Angola Open Source Community" es una plataforma oficial para colaboraciones en proyectos de código abierto. Este sitio ha sido diseñado para:
 
-- Información del Evento: Proporcionamos detalles sobre el Hackathon, incluyendo fechas, ubicación e información importante para los participantes.
-- Registro de Equipos: Permite que los equipos se inscriban para participar en el evento.
-- Presentación de Proyectos: Facilita la presentación de proyectos y soluciones desarrollados durante el Hackathon.
-- Recursos y Premios: Destaca los premios, recursos y oportunidades disponibles para los participantes.
-- Noticias y Actualizaciones: Mantenga a los participantes informados sobre noticias y actualizaciones relacionadas con el evento.
-
-Cómo Comenzar
-Para empezar a explorar el proyecto del sitio del Hackathon Angola 2023, siga estos pasos:
-
-1. Clone el repositorio en su ordenador.
-
-2. Vaya al directorio raíz del proyecto.
-
-3. Instale las dependencias con npm install.
-
-4. Inicie el servidor de desarrollo con npm start.
+Noticias y Actualizaciones: Mantener a los colaboradores informados sobre noticias y actualizaciones relacionadas con el mundo del código abierto.
 
 Contribuciones
-Este proyecto está abierto a contribuciones de la comunidad. Si desea contribuir, informar sobre problemas o mejorar el proyecto, no dude en hacerlo.
+Este proyecto está abierto a contribuciones de la comunidad. Si deseas contribuir, informar sobre problemas o mejorar el proyecto, no dudes en hacerlo.
 
 Licencia
-Este proyecto está bajo la licencia que usted ha especificado, así que asegúrese de revisar la licencia antes de usarlo.
+Este proyecto está bajo la licencia "Tu Licencia", así que asegúrate de revisar la licencia antes de usarlo.
 
-
-## Empezando
+```bash
+Para Empezar
 
 Antes de comenzar, asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, sigue estos pasos:
+
+Para comenzar a explorar el proyecto del sitio de Contribuciones de Código Abierto, sigue estos pasos:
+
+Clona el repositorio en tu computadora (opcional).
+
+Descarga el proyecto.
+
+Navega hasta el directorio raíz del proyecto.
+
+Instala las dependencias con npm install.
+
+Inicia el servidor de desarrollo con npm start.
+
+## Comenzando
+
+Ejecuta los siguientes comandos en Visual Studio Code o CMD.
 
 ```bash
 npm run dev
