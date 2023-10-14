@@ -78,3 +78,35 @@ img {
 .animate-slide-left {
   animation: slide-left 20s linear infinite;
 }
+
+
+/* Menu NAVBAR */
+header{margin-bottom: 20px !important;}
+
+nav.menu-navbar ul{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly !important;
+ align-items: flex-end;
+ align-content: flex-end;
+}
+ 
+.menu-navbar ul li{
+  padding: 14px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.menu-navbar ul li .item-menu{
+  font-weight: 700 !important;
+
+ }
+
+.menu-navbar ul li .item-menu:hover{
+ font-weight: 500 !important;
+ -webkit-transition: 0.2s !important;
+ -moz-transition: 0.2s !important;
+ -ms-transition: 0.2s !important;
+ -o-transition: 0.2s !important;
+ transition: 0.2s !important;
+}
