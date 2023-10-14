@@ -34,7 +34,7 @@ function Footer({ ...rest }) {
               </p>
             </div>
             <ButtonLink
-              href="mailton:info@aosc.social"
+              href="mailto:info@aosc.social"
               text="Fale conosco"
               className="text-center justify-center items-center w-56"
             />
