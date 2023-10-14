@@ -23,7 +23,7 @@ export default function Home() {
         <span className="text-white">
           {" "}
           Participe agora do primeiro evento presencial da
-          Angola Open Source Commnunity em Luanda.
+          Angola Open Source Community em Luanda.
         </span>
       </div>
 
