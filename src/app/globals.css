@@ -110,3 +110,28 @@ nav.menu-navbar ul{
  -o-transition: 0.2s !important;
  transition: 0.2s !important;
 }
+
+/* BTN Doacao */
+
+.btn-doacao {
+  background: #F87171;
+  /*Cordefundo*/border: none;
+  border-radius: 50px;
+  /*Cantoarredondado*/padding: 10px 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  /*Efeitodesombreamento*/font-size: 16px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.btn-doacao:hover {
+  background: #FF6B6B; /* Cor de fundo ao passar o mouse */
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4), -6px -6px 10px rgba(255, 255, 255, 0.4); /* Alteração do efeito de sombreamento no hover */
+}
+
