@@ -44,7 +44,7 @@ function Motivations({ className, ...rest }: any) {
     >
       <div
         ref = {targetRef}
-        className="w-full max-w-[1216px] py-5 flex flex-col xl:flex-col gap-7"
+        className="w-full max-w-[1216px] py-10 flex flex-col xl:flex-col gap-7"
       >
         <div className="max-w-[1200px] items-center flex flex-col gap-3">
           <h2 className="md:text-5xl text-3xl font-bold leading-[130%] text-white">
