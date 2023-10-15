@@ -14,6 +14,7 @@ function Header({ ...rest }) {
         <Logo />
         <Menu items={MENU} />
         <ButtonLink
+        className="btn-doacao"
           href={"https://opencollective.com/aosc"}
           target="_blank"
           text={"Faça uma doação"}
