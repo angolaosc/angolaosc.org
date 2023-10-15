@@ -10,7 +10,7 @@ function Footer({ ...rest }) {
   const year = date.getFullYear();
   return (
     <section
-      className="bg-[#262626] flex items-center pt-14 w-full justify-center"
+      className="flex items-center pt-14 w-full justify-center"
       {...rest}
     >
       <div className="max-w-[1216px] px-6 w-full flex flex-col gap-5 justify-start items-center xl:items-start">
@@ -24,11 +24,11 @@ function Footer({ ...rest }) {
                   width={80}
                   height={80}
                 />
-                <h3 className="sm:text-3xl text-white text-2xl font-bold">
+                <h3 className="sm:text-3xl text-2xl font-bold">
                   Angola OpenSource Community
                 </h3>
               </div>
-              <p className=" w-72 text-white">
+              <p className=" w-72">
                 We aim to develop and promote FOSS in
                 Angola.
               </p>
@@ -41,7 +41,7 @@ function Footer({ ...rest }) {
           </div>
           <div className="flex flex-row flex-wrap gap-6">
             <div className="w-52">
-              <h3 className="text-xl text-white">AOSC</h3>
+              <h3 className="text-xl">AOSC</h3>
               <ul className="flex flex-col">
                 <li>
                   <Link
@@ -78,7 +78,6 @@ function Footer({ ...rest }) {
                     href={"https://fest.aosc.social/"}
                     target="_blank"
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
-                    
                   >
                     AOSFest 2023
                   </NextLink>
@@ -87,7 +86,7 @@ function Footer({ ...rest }) {
             </div>
 
             <div className="w-52">
-              <h3 className="text-xl text-white">Comunidades</h3>
+              <h3 className="text-xl">Comunidades</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -136,7 +135,7 @@ function Footer({ ...rest }) {
               </ul>
             </div>
             <div className="w-52">
-              <h3 className="text-xl text-white">Projectos</h3>
+              <h3 className="text-xl">Projectos</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -163,7 +162,7 @@ function Footer({ ...rest }) {
           </div>
         </div>
         <div className="flex justify-center items-center w-full py-6 border-t flex-col gap-6 md:flex-row md:justify-between">
-          <p className="text-white text-center md:text-start">
+          <p className=" text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
             Todos os direitos reservados.
