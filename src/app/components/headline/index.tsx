@@ -4,6 +4,7 @@ import ButtonLink from "../buttonLink";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
+import { i18n } from "@/translate/i18n";
 
 function Headline({ ...rest }) {
   return (
@@ -18,21 +19,17 @@ function Headline({ ...rest }) {
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.5 }}
         >
-          Criando um impacto{" "}
-          <br className="hidden xl:block" /> significativo
-          na inovação tecnológica do país.
+          {i18n.t('headline.title')}
         </motion.h1>
         <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-          A nossa missão é promover o desenvolvimento e
-          adoção de Free and Open-source Software(FOSS) em
-          Angola.
+          {i18n.t('headline.description')}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
             href={
               "https://linktr.ee/angolaosc"
             }
-            text={"Juntar-me a comunidade"}
+            text={i18n.t('headline.button')}
             target="_blank"
           />
           <LinkScroll
@@ -42,7 +39,7 @@ function Headline({ ...rest }) {
             delay={0.8}
             className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-            Saiba Mais
+            {i18n.t('headline.link')}
           </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
@@ -84,7 +81,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 2,700 membros
+            {i18n.t('headline.info')}
           </span>
         </div>
       </div>
@@ -111,7 +108,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Software Livre
+         {i18n.t('headline.bloom_1')}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -123,7 +120,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Colaboração
+         {i18n.t('headline.bloom_2')}
         </motion.span>
         <Image
           src={"/hero.png"}

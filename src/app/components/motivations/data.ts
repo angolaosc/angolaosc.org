@@ -1,3 +1,4 @@
+import { i18n } from "@/translate/i18n";
 export const MOTIVATIONS = [
   {
     id: 1,
