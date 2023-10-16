@@ -2,8 +2,10 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import ButtonLink from "../buttonLink";
 import { MOTIVATIONS } from "./data";
+import { useTheme } from "next-themes";
 
 function Motivations({ className, ...rest }: any) {
+  const { theme } = useTheme();
   return (
     <section
       className={twMerge(
@@ -26,7 +28,11 @@ function Motivations({ className, ...rest }: any) {
             href={"https://linktr.ee/angolaosc"}
             text={"Juntar-me a comunidade"}
             target="_blank"
-            className="md:max-w-fit w-full text-center justify-center md:justify-start"
+            className={
+              theme === "dark"
+                ? "btn-bg-dark-mode md:max-w-fit w-full text-center justify-center md:justify-start"
+                : "md:max-w-fit w-full text-center justify-center md:justify-start"
+            }
           />
         </div>
         <div className="max-w-[696px]">

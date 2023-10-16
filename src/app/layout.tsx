@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import ProviderTheme from "../context/providerTheme";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -39,7 +40,8 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className}>
+        <ProviderTheme>{children}</ProviderTheme></body>
     </html>
   );
 }
