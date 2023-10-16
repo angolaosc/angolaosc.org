@@ -18,7 +18,7 @@ function Header({ ...rest }) {
 
   const handleChangeLanguage = (value:any)=>{
       localStorage.setItem('i18nextLng', value)
-      location = location
+      window.location.reload()
   }
 
   useEffect(() => {
