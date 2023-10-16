@@ -2,6 +2,7 @@ import { Link, Element } from "react-scroll";
 import NextLink from "next/link";
 import React from "react";
 
+
 type MenuItem = {
   id: number;
   text: string;

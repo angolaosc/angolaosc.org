@@ -1,5 +1,6 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import { i18n } from "@/translate/i18n";
 
 interface TapeProps {
   className?: string;
@@ -29,25 +30,25 @@ function Tape({
       >
         {/* Conteúdo duplicado para transição suave */}
         {[...Array(2)].map((_, idx) => (
-          <span key={idx} className="text-2xl font-bold">
+          <div key={idx} className="text-2xl font-bold">
             <ul className="flex gap-4 md:gap-8">
               <li>Open Source</li>
               <li>.</li>
-              <li>Software Livre</li>
+              <li>{i18n.t('marquee.text_2')}</li>
               <li>.</li>
-              <li>Comunidade</li>
+              <li>{i18n.t('marquee.text_1')}</li>
               <li>.</li>
-              <li>Colaboração</li>
+              <li>{i18n.t('marquee.text_3')}</li>
               <li>.</li>
               <li>Open Source</li>
               <li>.</li>
-              <li>Software Livre</li>
+              <li>{i18n.t('marquee.text_2')}</li>
               <li>.</li>
-              <li>Comunidade</li>
+              <li>{i18n.t('marquee.text_1')}</li>
               <li>.</li>
-              <li>Colaboração</li>
+              <li>{i18n.t('marquee.text_3')}</li>
             </ul>
-          </span>
+          </div>
         ))}
       </div>
     </div>

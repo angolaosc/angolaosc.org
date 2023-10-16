@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ButtonLink from "../buttonLink";
 import Link from "next/link";
 import Image from "next/image";
+import { i18n } from "@/translate/i18n";
 
 function Headline({ ...rest }) {
   return (
@@ -13,12 +14,11 @@ function Headline({ ...rest }) {
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
           className="md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0.9 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Criando um impacto <br className="hidden xl:block" />{" "}
-          significativo na inovação tecnológica do país.
+         {i18n.t('section_1.title') }
         </motion.h1>
         <p
           // data-scroll
@@ -28,15 +28,14 @@ function Headline({ ...rest }) {
           // data-scroll-repeat
           className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start"
         >
-          A nossa missão é promover o desenvolvimento e 
-          adoção de Free and Open-source Software(FOSS) em Angola.
+          {i18n.t('section_1.description')}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
             href={"/"}
-            text={"Juntar-me a comunidade"}
+            text= {i18n.t('section_1.button') }
           />
-          <Link href={"/"}>Saiba Mais</Link>
+          <Link href={"/"}> {i18n.t('section_1.link')}</Link>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
           <div className="flex -space-x-3 overflow-hidden p-2 px-0">
@@ -77,7 +76,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 200 membros
+            {i18n.t('section_1.info')}
           </span>
         </div>
       </div>
@@ -104,7 +103,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Software Livre
+          {i18n.t('section_1.bloom_1')}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -116,7 +115,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Colaboração
+          {i18n.t('section_1.bloom_2')}
         </motion.span>
         <Image
           src={"/hero.png"}
