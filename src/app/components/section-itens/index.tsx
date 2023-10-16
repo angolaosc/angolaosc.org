@@ -1,6 +1,7 @@
 import { title } from "process";
 import React, { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { useTheme } from "next-themes";
 
 interface iPurposes {
   id: number;
@@ -21,6 +22,7 @@ function SectionItens({
   title,
   ...rest
 }: iSectionItens) {
+  const { theme } = useTheme();
   return (
     <section
       id="purposes"
@@ -41,7 +43,13 @@ function SectionItens({
             className="flex flex-col gap-4  max-w-md"
           >
             {Icon}
-            <h3 className="text-black font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm">
+            <h3
+              className={
+                theme === "dark"
+                  ? "color-dark-mode font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm"
+                  : "text-black font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm"
+              }
+            >
               {title}
             </h3>
             <p className="text-[#646464] xl:text-lg text-sm leading-[130%]">

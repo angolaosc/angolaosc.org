@@ -1,8 +1,11 @@
 import Image from "next/image";
 import { Link } from "react-scroll";
 import React from "react";
+import { useTheme } from "next-themes";
 
 function Logo() {
+  const { theme } = useTheme();
+
   return (
     <Link
       smooth={true}
@@ -16,7 +19,7 @@ function Logo() {
         width={32}
         height={32}
       />
-      <h3 className="text-sm font-semibold leading-4 text-black">
+      <h3 className={theme === "dark" ? "nav-color-dark-mode" : "text-sm font-semibold leading-4 text-black"}>
         Angola OpenSource Community
       </h3>
     </Link>

@@ -4,8 +4,10 @@ import ButtonLink from "../buttonLink";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 function Headline({ ...rest }) {
+  const { theme } = useTheme();
   return (
     <section
       className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start pt-32 "
@@ -29,9 +31,10 @@ function Headline({ ...rest }) {
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-            href={
-              "https://linktr.ee/angolaosc"
+            className={
+              theme === "dark" ? "btn-bg-dark-mode" : ""
             }
+            href={"https://linktr.ee/angolaosc"}
             text={"Juntar-me a comunidade"}
             target="_blank"
           />

@@ -4,10 +4,12 @@ import ButtonLink from "../buttonLink";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 function Footer({ ...rest }) {
   const date = new Date();
   const year = date.getFullYear();
+  const { theme } = useTheme();
   return (
     <section
       className="flex items-center pt-14 w-full justify-center"
@@ -48,7 +50,7 @@ function Footer({ ...rest }) {
                     to={"top"}
                     smooth={true}
                     duration={1400}
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Início
                   </Link>
@@ -58,7 +60,7 @@ function Footer({ ...rest }) {
                     to={"motivations"}
                     smooth={true}
                     duration={1400}
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Motivações
                   </Link>
@@ -68,7 +70,7 @@ function Footer({ ...rest }) {
                     to={"our-team"}
                     smooth={true}
                     duration={1400}
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Equipa
                   </Link>
@@ -77,7 +79,7 @@ function Footer({ ...rest }) {
                   <NextLink
                     href={"https://fest.aosc.social/"}
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     AOSFest 2023
                   </NextLink>
@@ -94,7 +96,7 @@ function Footer({ ...rest }) {
                       "https://discord.com/invite/tuUDNdRzvz"
                     }
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Discord
                   </NextLink>
@@ -105,7 +107,7 @@ function Footer({ ...rest }) {
                       "https://www.facebook.com/aoscangola"
                     }
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Facebook
                   </NextLink>
@@ -116,7 +118,7 @@ function Footer({ ...rest }) {
                       "https://www.linkedin.com/company/angola-open-source-community"
                     }
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Linkedin
                   </NextLink>
@@ -127,7 +129,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/@angolaosc"
                     }
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Youtube
                   </NextLink>
@@ -141,7 +143,7 @@ function Footer({ ...rest }) {
                   <NextLink
                     href={"https://mentorship.aosc.social"}
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     Programa de Mentoria
                   </NextLink>
@@ -152,7 +154,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"
                     }
                     target="_blank"
-                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className={theme === "dark" ? "footer-color-dark-mode" : "hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"}
                   >
                     The Open Source Café(TOSCA)
                   </NextLink>
