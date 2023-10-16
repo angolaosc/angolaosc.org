@@ -5,7 +5,12 @@
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+ 
 }
+/*
+html{
+  color-scheme: dark;
+}*/
 
 :root {
 }
