@@ -1,4 +1,5 @@
 import { Brain, Coffee, Confetti } from "phosphor-react";
+import { i18n } from "@/translate/i18n";
 
 export const PURPOSES = [
   {
@@ -6,16 +7,16 @@ export const PURPOSES = [
     Icon: (
       <Brain weight="duotone" size={40} color="#FE5C5C" />
     ),
-    title: "Fomentar a cultura do software livre.",
-    body: "Promover a conscientização sobre os benefícios do software de código aberto e incentivar seu uso em Angola.",
+    title: i18n.t('section_2.card_1.title'),
+    body:  i18n.t('section_2.card_1.description'),
   },
   {
     id: 2,
     Icon: (
       <Coffee weight="duotone" size={40} color="#FE5C5C" />
     ),
-    title: "Acelerar o desenvolvimento de código aberto.",
-    body: "Oferecer recursos e programas de mentoria, workshops, e outros eventos para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no código aberto.",
+    title: i18n.t('section_2.card_2.title'),
+    body:  i18n.t('section_2.card_2.description'),
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ export const PURPOSES = [
         color="#FE5C5C"
       />
     ),
-    title: "Estabelecer parcerias e colaborações.",
-    body: "Fortalecer a comunidade de software livre em Angola, facilitando a troca de conhecimento, recursos e experiências entre desenvolvedores.",
+    title: i18n.t('section_2.card_3.title'),
+    body:  i18n.t('section_2.card_3.description'),
   },
 ];
