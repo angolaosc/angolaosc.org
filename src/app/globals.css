@@ -29,16 +29,16 @@ body {
 }
 
 [data-theme='dark'] .nav-color-dark-mode {
-  color: #fff;
+  color: #f1f1f1;
 }
 
 
 [data-theme='dark'] .footer-color-dark-mode {
-  color: #fff;
+  color: #f1f1f1;
 }
 
 [data-theme='dark'] .color-dark-mode {
-  color: #fff;
+  color: #f1f1f1;
 }
 
 [data-theme="dark"] .btn-bg-dark-mode {
