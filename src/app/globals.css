@@ -23,6 +23,28 @@ body {
 :root {
 }
 
+[data-theme='dark'],
+[data-theme='dark'] .nav-dark-mode {
+  background: #000;
+}
+
+[data-theme='dark'] .nav-color-dark-mode {
+  color: #f1f1f1;
+}
+
+
+[data-theme='dark'] .footer-color-dark-mode {
+  color: #f1f1f1;
+}
+
+[data-theme='dark'] .color-dark-mode {
+  color: #f1f1f1;
+}
+
+[data-theme="dark"] .btn-bg-dark-mode {
+  background-color: rgb(211, 82, 82);
+}
+
 img {
   user-select: none;
   pointer-events: none;
