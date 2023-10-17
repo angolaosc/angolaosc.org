@@ -1,36 +1,32 @@
+import { i18n } from "@/translate/i18n";
 export const TEAM = [
   {
     id: 1,
     name: "António Pedro",
-    ocupation:
-      "Founder | Estudante de Ciência da Computação",
+    ocupation:i18n.t('team.member_1.occupation'),
     avatar: "/antonio.jpg",
-    description:
-      "Pesquisador colaborador no Multimodal Digital Media Analysis Lab @ IIIT-D. Apaixonado por Cloud Native Computing e open-source.",
+    description:i18n.t('team.member_1.description'),
   },
   {
     id: 2,
     name: "Lázaro Manuel",
-    ocupation: "Co-founder | Software Developer",
+    ocupation: i18n.t('team.member_2.occupation'),
     avatar: "/lazaro.jpg",
-    description:
-      "Sou desenvolvedor de software e líder comunitário. Apaixonado por compartilhar conhecimento e entusiasta de softwares de código aberto.",
+    description:i18n.t('team.member_2.description'),
   },
   {
     id: 3,
     name: "Cláudio da Silva",
-    ocupation: "Core member | Software Developer",
+    ocupation: i18n.t('team.member_3.occupation'),
     avatar: "/claudio.jpeg",
-    description: "",
+    description:i18n.t('team.member_3.description'),
   },
   {
     id: 4,
     name: "Wilmy Danguya",
-    ocupation:
-      "Core member | Software Developer | UI Designer",
+    ocupation:i18n.t('team.member_4.occupation'),
     avatar: "/danguya.jpeg",
-    description:
-      "Apaixonado por desenvolvimento de software, design e educação.",
+    description:i18n.t('team.member_4.description'),
   },
   // {
   //   id: 5,

@@ -2,6 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import ButtonLink from "../buttonLink";
 import { MOTIVATIONS } from "./data";
+import { i18n } from "@/translate/i18n";
 
 function Motivations({ className, ...rest }: any) {
   return (
@@ -15,16 +16,14 @@ function Motivations({ className, ...rest }: any) {
       <div className="w-full max-w-[1216px] py-44 flex justify-between flex-col xl:flex-row gap-7">
         <div className="max-w-[490px] flex flex-col gap-3">
           <h2 className="md:text-5xl text-3xl font-bold leading-[130%] text-white">
-            Nossas Motivações
+          {i18n.t('motivation.title')}
           </h2>
           <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
-            Somos guiados por um conjunto de motivações que
-            nos ajudam a efetivamente alcançar a nossa
-            missão.
+           {i18n.t('motivation.description')}
           </p>
           <ButtonLink
             href={"https://linktr.ee/angolaosc"}
-            text={"Juntar-me a comunidade"}
+            text= {i18n.t('motivation.button')}
             target="_blank"
             className="md:max-w-fit w-full text-center justify-center md:justify-start"
           />
