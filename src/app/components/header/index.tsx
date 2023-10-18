@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./logo";
 import Menu from "./menu";
 import ButtonLink from "../buttonLink";
 import { MENU } from "./data";
+import { i18n } from "@/translate/i18n";
+
+const I18N_KEY = "i18nextLng";
 
 function Header({ ...rest }) {
+  const [language, setLanguage] = useState<any>('pt-BR')
+
+  const handleChangeLanguage = (value:any)=>{
+      localStorage.setItem('i18nextLng', value)
+      window.location.reload()
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+        setLanguage(localStorage.getItem(I18N_KEY))
+    }
+  }, []);
+
   return (
     <header
       className="w-full flex-col items-center justify-center px-6 hidden lg:flex fixed top-10 bg-white z-50"
@@ -13,10 +29,14 @@ function Header({ ...rest }) {
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
         <Logo />
         <Menu items={MENU} />
+        <select style={{outline:'none', cursor:'pointer'}} onChange={(e)=>handleChangeLanguage(e.target.value)} value={language}>
+          <option value="en-US">English</option>
+          <option value="pt-BR">Português</option>
+        </select>
         <ButtonLink
           href={"https://opencollective.com/aosc"}
           target="_blank"
-          text={"Faça uma doação"}
+          text={i18n.t('nav.button')}
         />
       </div>
       <hr />
