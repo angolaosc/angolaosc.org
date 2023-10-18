@@ -1,23 +1,22 @@
-import { i18n } from "@/translate/i18n";
 export const MENU = [
   {
     id: 1,
-    text: i18n.t('nav.link_1'),
+    text: "Início",
     url: "top",
   },
   {
     id: 2,
-    text: i18n.t('nav.link_2'),
+    text: "Motivações",
     url: "motivations",
   },
   {
     id: 3,
-    text: i18n.t('nav.link_3'),
+    text: "AOSC Mentorship",
     url: "program",
   },
   {
     id: 4,
-    text: i18n.t('nav.link_4'),
+    text: "Equipa",
     url: "our-team",
   },
   {
