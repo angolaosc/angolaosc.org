@@ -1,0 +1,37 @@
+.imagemBanner{
+    position: absolute;
+    /* display: flex; */
+    /* margin-top: -2.9rem; */
+    /* margin-left: 38rem; */
+    width: 868px;
+}
+
+.text-title{
+    font-size: 86px;
+}
+
+.text-title2{
+    color: #FFD230;
+}
+
+.descriction{
+    font-size: 20px;
+}
+
+.position-button{
+    /* margin-top: 1rem; */
+    /* margin-left: 20.9rem; */
+}
+
+/* title lesson category */
+.title-lesson-category{
+    font-size: 32px;
+}
+
+.contagem{
+    display: flex;
+    width: auto;
+    height: 173px;
+    flex-shrink: 0;
+    background: var(--secundary-1, #00F);
+}

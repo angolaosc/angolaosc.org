@@ -1,0 +1,21 @@
+.dialog-content{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); /* Define três colunas de igual largura */
+    gap: 2rem;
+    color:black;
+    padding-top:20px;
+    font:'Roboto';
+    weight:900;
+    font-size: 1.1rem;
+}
+.topo{
+    text-align:center;
+    font:'Roboto';
+    weight:900;
+    font-size: 2.5rem;
+}
+.img{
+    margin-left:-5%;
+}
+
+

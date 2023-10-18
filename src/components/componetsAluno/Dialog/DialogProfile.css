@@ -1,0 +1,30 @@
+/* Estilo do dropdown */
+.dialog-dropdown {
+    position: absolute;
+  }
+  
+  .dialog-content {
+    position: absolute;
+    margin-top: -100%;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .dialog-content p {
+    margin-bottom: 10px;
+  }
+  
+  .dialog-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
