@@ -4,10 +4,31 @@ import ButtonLink from "../buttonLink";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from 'react';
+import './button.css'
+
 
 function Footer({ ...rest }) {
   const date = new Date();
   const year = date.getFullYear();
+
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+
+    return () => {
+      // window.removeEventListener('scroll');
+    };
+  }, []);
+
   return (
     <section
       className="flex items-center pt-14 w-full justify-center"
@@ -182,12 +203,14 @@ function Footer({ ...rest }) {
               Licença Apache-2.0
             </NextLink>
           </p>
+
           <button
             onClick={() => animateScroll.scrollToTop()}
-            className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
+            className={`text-slate-100 bg-red-600 hover:text-slate-100 hover:bg-red-500 transition-colors duration-300 ease-linear ${scrolled ? 'fixed-button' : ''}`}
           >
-            Voltar ao topo
+            <FontAwesomeIcon icon={faArrowUp} />
           </button>
+
         </div>
       </div>
     </section>

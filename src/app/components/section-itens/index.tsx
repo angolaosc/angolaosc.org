@@ -25,7 +25,7 @@ function SectionItens({
     <section
       id="purposes"
       className={twMerge(
-        "flex flex-col xl:items-center items-start md:items-center gap-12 w-full max-w-[1216px] p-6 pt-20",
+        "flex flex-col xl:items-center items-start md:items-center gap-12 w-full max-w-[1216px] p-6 pt-44 mb-6",
         className,
       )}
       {...rest}

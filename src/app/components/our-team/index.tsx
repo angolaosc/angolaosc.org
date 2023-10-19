@@ -3,7 +3,9 @@ import Image from "next/image";
 import React from "react";
 
 function OurTeam() {
+  
   return (
+    
     <section className="py-28 pb-96" id="team">
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
         <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
@@ -20,7 +22,7 @@ function OurTeam() {
             }) => (
               <div
                 key={id}
-                className="md:max-w-[280px] w-full group"
+                className="md:max-w-[280px] w-full group transform transition-transform duration-500 ease-in-out opacity-60 translate-y-10 hover:translate-y-0 hover:opacity-100"
               >
                 <Image
                   src={avatar}

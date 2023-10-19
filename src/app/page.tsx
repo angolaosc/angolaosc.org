@@ -84,7 +84,7 @@ export default function Home() {
         <Purpose
           data={PURPOSES}
           title="Nossos principais objetivos"
-          className="py-12"
+          className="py-24"
         />
       </Element>
       <Element name="motivations">

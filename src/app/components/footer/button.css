@@ -1,0 +1,10 @@
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 40px; 
+  padding: 10px;
+  /*border: 2px solid #000;*/
+  /*background-color: red;*/
+  border-radius: 20%;
+  z-index: 999;
+}
