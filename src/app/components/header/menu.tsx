@@ -16,7 +16,7 @@ function Menu({ items }: MenuProps) {
   return (
     <nav className="hidden lg:block">
       <ul className="flex items-center gap-3">
-        {items.map(({ id, text, url }) => (
+        {items!==undefined && items.map(({ id, text, url }) => (
           <li className="text-[16px]" key={id}>
             {url.indexOf("http") !== -1 ? (
               <NextLink

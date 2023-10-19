@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import ButtonLink from "../buttonLink";
-import { MOTIVATIONS } from "./data";
 
 function Motivations({ className, ...rest }: any) {
+
   return (
     <section
       className={twMerge(
@@ -15,12 +16,10 @@ function Motivations({ className, ...rest }: any) {
       <div className="w-full max-w-[1216px] py-44 flex justify-between flex-col xl:flex-row gap-7">
         <div className="max-w-[490px] flex flex-col gap-3">
           <h2 className="md:text-5xl text-3xl font-bold leading-[130%] text-white">
-            Nossas Motivações
+            {rest.motivations.first}
           </h2>
           <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
-            Somos guiados por um conjunto de motivações que
-            nos ajudam a efetivamente alcançar a nossa
-            missão.
+            {rest.motivations.second}
           </p>
           <ButtonLink
             href={"https://linktr.ee/angolaosc"}
@@ -31,7 +30,7 @@ function Motivations({ className, ...rest }: any) {
         </div>
         <div className="max-w-[696px]">
           <ul className="flex flex-col gap-10">
-            {MOTIVATIONS.map(({ id, title, body }) => (
+            {rest.motivations.data.map(({ id, title, body }) => (
               <li key={id}>
                 <div className="bg-[#262626] p-8 flex flex-col gap-2 rounded-2xl">
                   <h2 className="text-2xl text-white font-bold leading-[150%]">

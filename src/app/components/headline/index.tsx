@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ButtonLink from "../buttonLink";
-import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
 
 function Headline({ ...rest }) {
+
   return (
     <section
       className="flex items-center w-full max-w-[1216px] py-10 px-6 justify-center xl:justify-start pt-32 "
@@ -14,25 +14,23 @@ function Headline({ ...rest }) {
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
           className="md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // transition={{ duration: 0.5 }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 0.5 }}
         >
-          Criando um impacto{" "}
-          <br className="hidden xl:block" /> significativo
-          na inovação tecnológica do país.
+          {rest.headline.first}{" "}
+          <br className="hidden xl:block" /> {rest.headline.second}
+          {rest.headline.third}
         </motion.h1>
         <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-          A nossa missão é promover o desenvolvimento e
-          adoção de Free and Open-source Software(FOSS) em
-          Angola.
+          {rest.headline.fourth}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
             href={
               "https://linktr.ee/angolaosc"
             }
-            text={"Juntar-me a comunidade"}
+            text={rest.headline.zero}
             target="_blank"
           />
           <LinkScroll
@@ -42,7 +40,7 @@ function Headline({ ...rest }) {
             delay={0.8}
             className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-            Saiba Mais
+            {rest.headline.fifth}
           </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
@@ -84,7 +82,7 @@ function Headline({ ...rest }) {
             />
           </div>
           <span className="text-base font-semibold">
-            Junte-se a mais de 2,700 membros
+            {rest.headline.sixth}
           </span>
         </div>
       </div>
@@ -111,7 +109,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Software Livre
+          {rest.headline.seventh}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -123,7 +121,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Colaboração
+          {rest.headline.eighth}
         </motion.span>
         <Image
           src={"/hero.png"}

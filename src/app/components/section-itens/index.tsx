@@ -1,6 +1,7 @@
 import { title } from "process";
 import React, { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { Brain, Coffee, Confetti } from "phosphor-react";
 
 interface iPurposes {
   id: number;
@@ -21,6 +22,23 @@ function SectionItens({
   title,
   ...rest
 }: iSectionItens) {
+
+  data[0].Icon = (
+    <Brain weight="duotone" size={40} color="#FE5C5C" />
+  )
+
+  data[1].Icon =(
+    <Coffee weight="duotone" size={40} color="#FE5C5C" />
+  )
+  
+  data[2].Icon =(
+    <Confetti
+          weight="duotone"
+          size={40}
+          color="#FE5C5C"
+        />
+  )
+
   return (
     <section
       id="purposes"

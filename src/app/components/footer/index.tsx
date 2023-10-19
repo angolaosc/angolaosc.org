@@ -6,6 +6,8 @@ import NextLink from "next/link";
 import Image from "next/image";
 
 function Footer({ ...rest }) {
+
+
   const date = new Date();
   const year = date.getFullYear();
   return (
@@ -29,13 +31,12 @@ function Footer({ ...rest }) {
                 </h3>
               </div>
               <p className=" w-72">
-                We aim to develop and promote FOSS in
-                Angola.
+                {rest.footer.zero}
               </p>
             </div>
             <ButtonLink
               href="mailto:info@aosc.social"
-              text="Fale conosco"
+              text={rest.footer.elenveth}
               className="text-center justify-center items-center w-56"
             />
           </div>
@@ -60,7 +61,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    Motivações
+                    {rest.footer.first}
                   </Link>
                 </li>
                 <li>
@@ -70,7 +71,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    Equipa
+                    {rest.footer.second}
                   </Link>
                 </li>
                 <li>
@@ -86,7 +87,7 @@ function Footer({ ...rest }) {
             </div>
 
             <div className="w-52">
-              <h3 className="text-xl">Comunidades</h3>
+              <h3 className="text-xl">{rest.footer.third}</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -135,7 +136,7 @@ function Footer({ ...rest }) {
               </ul>
             </div>
             <div className="w-52">
-              <h3 className="text-xl">Projectos</h3>
+              <h3 className="text-xl">{rest.footer.fourth}</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -143,7 +144,7 @@ function Footer({ ...rest }) {
                     target="_blank"
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    Programa de Mentoria
+                    {rest.footer.fifth}
                   </NextLink>
                 </li>
                 <li>
@@ -165,28 +166,28 @@ function Footer({ ...rest }) {
           <p className=" text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
-            Todos os direitos reservados.
+            {rest.footer.sixth}
             <br />
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosc.social"
             >
               {" "}
-              ver código fonte,{" "}
+              {rest.footer.seventh}{" "}
             </NextLink>
-            licenciado sob{" "}
+            {rest.footer.eighth}{" "}
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE"
             >
-              Licença Apache-2.0
+              {rest.footer.ninth} Apache-2.0
             </NextLink>
           </p>
           <button
             onClick={() => animateScroll.scrollToTop()}
             className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
-            Voltar ao topo
+            {rest.footer.tenth}
           </button>
         </div>
       </div>

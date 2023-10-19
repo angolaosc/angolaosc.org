@@ -1,0 +1,118 @@
+{
+    "page":{
+        "first":"Participe agora do primeiro evento presencial da Angola Open Source Commnunity em Luanda.",
+        "second":"Nossos principais objetivos" 
+    },
+    "header":{
+        "first": "Faça uma doação",
+        "menu": [
+            {
+              "id": 1,
+              "text": "Início",
+              "url": "top"
+            },
+            {
+              "id": 2,
+              "text": "Motivações" ,
+              "url": "motivations"
+            },
+            {
+              "id": 3,
+              "text": "AOSC Mentorship",
+              "url": "program"
+            },
+            {
+              "id": 4,
+              "text": "Equipa",
+              "url": "our-team"
+            },
+            {
+              "id": 5,
+              "text": "AOSFest 2023",
+              "url": "https://fest.aosc.social/"
+            },
+            {
+              "id": 6,
+              "text": "TOSCA",
+              "url": "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"
+            }
+          ]
+    },
+    "headline": {
+        "zero": "Juntar-me a comunidade",
+        "firs": "Criando um impacto",
+        "second": " significativo",
+        "third": " na inovação tecnológica do país.",
+        "fourth": "A nossa missão é promover o desenvolvimento e adoção de Free and Open-source Software(FOSS) em Angola.",
+        "fifth": "Saiba Mais",
+        "sixth": "Junte-se a mais de 2,700 membros",
+        "seventh": "Software Livre",
+        "eighth": "Colaboração"
+    },
+    "purpose": {
+        "data":  [
+            {
+              "id": 1,
+              "title": "Fomentar a cultura do software livre.",
+              "body": "Promover a conscientização sobre os benefícios do software de código aberto e incentivar seu uso em Angola."
+            },
+            {
+              "id": 2,
+              "title": "Acelerar o desenvolvimento de código aberto.",
+              "body": "Oferecer recursos e programas de mentoria, workshops, e outros eventos para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no código aberto."
+            },
+            {
+              "id": 3,
+              "title": "Estabelecer parcerias e colaborações.",
+              "body": "Fortalecer a comunidade de software livre em Angola, facilitando a troca de conhecimento, recursos e experiências entre desenvolvedores."
+            }
+          ]
+    },
+    "motivations": {
+        "firs":"Nossas Motivações",
+        "second": "Somos guiados por um conjunto de motivações que nos ajudam a efetivamente alcançar a nossa missão.",
+        "data":[
+            {
+              "id": 1,
+              "title": "Software Livre em Angola",
+              "body": "Queremos aumentar o reconhecimento da comunidade de software livre em Angola."
+            },
+            {
+              "id": 2,
+              "title": "Código Aberto em Angola",
+              "body": "O software de código aberto é uma ferramenta poderosa para o desenvolvimento tecnológico e econômico de um país."
+            },
+            {
+              "id": 3,
+              "title": "Promover inovação e desenvolvimento tecnológico",
+              "body": "Ao capacitar os desenvolvedores angolanos a participar ativamente neste ecossistema, esperamos impulsionar a inovação local, estimular a criação de emprego e contribuir para a transformação digital do país e do mundo."
+            }
+          ] 
+    },
+    "program": {
+     "firs":"Programa de Mentoria",
+     "second": "Inclui uma semana de workshops online e treinamentos introdutórios sobre Git e outras ferramentas essenciais para o desenvolvimento de software open source.",
+     "third": "Experiência Prática",
+     "fourth": "Conecta mentores experientes, colaboradores talentosos e organizações de software livre para contribuir para projetos de open source.",
+     "fifth": "Desenvolvimento de Carreira",
+     "sixth": "Fornece uma base sólida de conhecimento e habilidades para desenvolvedores angolanos que desejam contribuir para projetos de software livre.",
+     "seventh": "+12 mentorados"
+    },
+    "ourTeam":{
+        "first": "Conheça o nosso core team incrível"
+    },
+    "footer": {
+        "zero":"Nosso objetivo é desenvolver e promover FOSS em Angola.",
+        "first": "Motivações",
+        "second": "Equipa",
+        "third": "Comunidades",
+        "fourth": "Projectos",
+        "fifth": "Programa de Mentoria",
+        "sixth": "Todos os direitos reservados.",
+        "seventh": "ver código fonte,",
+        "eighth": "licenciado sob",
+        "ninth": "Licença",
+        "tenth": "Voltar ao topo",
+        "elenveth": "Fale conosco"
+    }
+}
