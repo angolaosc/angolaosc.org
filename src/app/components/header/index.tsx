@@ -31,7 +31,9 @@ function Header({ ...rest }) {
         <Menu items={MENU} />
         <select style={{outline:'none', cursor:'pointer'}} onChange={(e)=>handleChangeLanguage(e.target.value)} value={language}>
           <option value="en-US">English</option>
+          <option value="fr-fr">French</option>
           <option value="pt-BR">Português</option>
+          <option value="sp-sp">Spanish</option>
         </select>
         <ButtonLink
           href={"https://opencollective.com/aosc"}
