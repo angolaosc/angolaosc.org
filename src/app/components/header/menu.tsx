@@ -1,7 +1,6 @@
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import React, { useState } from "react";
-import InfoPromo from "./infoPromo";
 
 type MenuItem = {
   id: number;
@@ -15,41 +14,8 @@ type MenuProps = {
 
 function Menu({ items }: MenuProps) {
 
-  // var language = [
-  //   ["Participe agora do primeiro evento presencial da Angola Open Source Commnunity em Luanda.", "Join now the first in-person event of the Angola Open Source Community in Luanda.", "Rejoignez dès maintenant le premier événement en personne de la Communauté Open Source d'Angola à Luanda."],
-  // ]
-
-  // const [isVisible, setIsVisible] = useState(true);
-  // const toggleVisibility = () => {
-  //   setIsVisible(!isVisible);
-  // };
-
-  // const divStyle = {
-  //   display: isVisible ? 'block' : 'none',
-  //   height: isVisible ? 'auto' : 0,
-  //   textAlign: 'center',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-
-  // };
-
   return (
-    <div>
-      {/* <div>
-        {isVisible && (
-          <div style={divStyle} className="gap-2 items-center justify-center pointer-events-none select-none fixed top-0 mb-4 bg-violet-600 right-0 left-0 p-6 py-2 lg:flex">
-            <i>🇦🇴</i>
-            <span className="text-white">
-              {" "}
-              {language[0][0]} 
-            </span>
-            <button onClick={toggleVisibility} className="close-button pointer-events-auto ml-3">
-              X
-            </button>
-          </div>
-        )}
-      </div> */}
-      
+    <div>      
       <nav className="hidden lg:block">
         <ul className="flex items-center gap-3">
           {items.map(({ id, text, url }) => (
