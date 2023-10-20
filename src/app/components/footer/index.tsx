@@ -4,7 +4,6 @@ import ButtonLink from "../buttonLink";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import Image from "next/image";
-import { i18n } from "@/translate/i18n";
 
 function Footer({ ...rest }) {
   const date = new Date();
@@ -36,7 +35,7 @@ function Footer({ ...rest }) {
             </div>
             <ButtonLink
               href="mailto:info@aosc.social"
-              text={i18n.t('footer.button')}
+              text="Fale conosco"
               className="text-center justify-center items-center w-56"
             />
           </div>
@@ -51,7 +50,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    {i18n.t('footer.aosc.link_1')}
+                    Início
                   </Link>
                 </li>
                 <li>
@@ -61,7 +60,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                   {i18n.t('footer.aosc.link_2')}
+                    Motivações
                   </Link>
                 </li>
                 <li>
@@ -71,7 +70,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    {i18n.t('footer.aosc.link_3')}
+                    Equipa
                   </Link>
                 </li>
                 <li>
@@ -87,7 +86,7 @@ function Footer({ ...rest }) {
             </div>
 
             <div className="w-52">
-              <h3 className="text-xl">{i18n.t('footer.community.title')}</h3>
+              <h3 className="text-xl">Comunidades</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -136,7 +135,7 @@ function Footer({ ...rest }) {
               </ul>
             </div>
             <div className="w-52">
-              <h3 className="text-xl">{i18n.t('footer.project.title')}</h3>
+              <h3 className="text-xl">Projectos</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -144,7 +143,7 @@ function Footer({ ...rest }) {
                     target="_blank"
                     className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    {i18n.t('footer.project.link_1')}
+                    Programa de Mentoria
                   </NextLink>
                 </li>
                 <li>
@@ -166,28 +165,28 @@ function Footer({ ...rest }) {
           <p className=" text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
-            {i18n.t('footer.copyright.info_1')}
+            Todos os direitos reservados.
             <br />
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosc.social"
             >
               {" "}
-              {i18n.t('footer.copyright.link_1')},{" "}
+              ver código fonte,{" "}
             </NextLink>
-            {i18n.t('footer.copyright.info_2')}{" "}
+            licenciado sob{" "}
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE"
             >
-              {i18n.t('footer.copyright.link_2')}
+              Licença Apache-2.0
             </NextLink>
           </p>
           <button
             onClick={() => animateScroll.scrollToTop()}
             className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
-           {i18n.t('footer.button_top')}
+            Voltar ao topo
           </button>
         </div>
       </div>

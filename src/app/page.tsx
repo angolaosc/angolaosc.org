@@ -11,7 +11,6 @@ import Program from "./components/program";
 import MobileHeader from "./components/header/mobile";
 import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
-import { i18n } from "@/translate/i18n";
 
 export default function Home() {
   return (
@@ -22,7 +21,9 @@ export default function Home() {
       <div className="gap-2 items-center justify-center pointer-events-none select-none z-50 fixed top-0 bg-violet-600 right-0 left-0 p-6 py-2 hidden lg:flex">
         <i>🇦🇴</i>
         <span className="text-white">
-        {i18n.t('heading.info')}
+          {" "}
+          Participe agora do primeiro evento presencial da
+          Angola Open Source Community em Luanda.
         </span>
       </div>
 
@@ -40,7 +41,7 @@ export default function Home() {
       <Element name="purposes">
         <Purpose
           data={PURPOSES}
-          title={i18n.t('goal.title')}
+          title="Nossos principais objetivos"
           className="py-52"
         />
       </Element>

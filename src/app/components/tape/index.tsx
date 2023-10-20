@@ -1,6 +1,5 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { i18n } from "@/translate/i18n";
 
 interface TapeProps {
   className?: string;
@@ -34,19 +33,19 @@ function Tape({
             <ul className="flex gap-4 md:gap-8">
               <li>Open Source</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_2')}</li>
+              <li>Software Livre</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_1')}</li>
+              <li>Comunidade</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_3')}</li>
+              <li>Colaboração</li>
               <li>.</li>
               <li>Open Source</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_2')}</li>
+              <li>Software Livre</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_1')}</li>
+              <li>Comunidade</li>
               <li>.</li>
-              <li>{i18n.t('tape.text_3')}</li>
+              <li>Colaboração</li>
             </ul>
           </span>
         ))}
