@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation"
 
-function LanguageSelector(lang) {
+function LanguageSelector(lang: { lang: any; }) {
 
 
   const [selectedValue, setSelectedValue] = useState(lang.lang);
