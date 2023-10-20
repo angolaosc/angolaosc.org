@@ -26,7 +26,7 @@ function Motivations({ className, ...rest }: any) {
             href={"https://linktr.ee/angolaosc"}
             text={"Juntar-me a comunidade"}
             target="_blank"
-            className="md:max-w-fit w-full text-center justify-center md:justify-start"
+            className="dark:bg-btn dark:text-btc md:max-w-fit w-full text-center justify-center md:justify-start"
           />
         </div>
         <div className="max-w-[696px]">
@@ -37,7 +37,7 @@ function Motivations({ className, ...rest }: any) {
                   <h2 className="text-2xl text-white font-bold leading-[150%]">
                     {title}
                   </h2>
-                  <p className="text-base text-[#a3a3a3] font-medium leading-[150%]">
+                  <p className=" text-base text-[#a3a3a3] font-medium leading-[150%]">
                     {body}
                   </p>
                 </div>
