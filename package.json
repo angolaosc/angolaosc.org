@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
+    "@types/negotiator": "^0.6.2",
     "@types/react-scroll": "^1.8.7",
     "eslint": "^8.48.0",
     "eslint-plugin-import": "^2.28.1",

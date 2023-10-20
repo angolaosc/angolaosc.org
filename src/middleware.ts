@@ -10,7 +10,7 @@ function getLocale(request: NextRequest): string | undefined {
 
     request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
 
-    const locales: string[] = i18n.locales
+    const locales: string[] = [...i18n.locales]
 
     let languages = new Negotiator({ headers: negotiatorHeaders }).languages(
         locales
