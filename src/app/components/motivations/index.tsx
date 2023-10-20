@@ -30,14 +30,14 @@ function Motivations({ className, ...rest }: any) {
         </div>
         <div className="max-w-[696px]">
           <ul className="flex flex-col gap-10">
-            {rest.motivations.data.map(({ id, title, body }) => (
-              <li key={id}>
+            {rest.motivations.data.map((data: { id: string , title: string, body: string }) => (
+              <li key={data.id}>
                 <div className="bg-[#262626] p-8 flex flex-col gap-2 rounded-2xl">
                   <h2 className="text-2xl text-white font-bold leading-[150%]">
-                    {title}
+                    {data.title}
                   </h2>
                   <p className="text-base text-[#a3a3a3] font-medium leading-[150%]">
-                    {body}
+                    {data.body}
                   </p>
                 </div>
               </li>
