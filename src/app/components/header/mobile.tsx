@@ -59,9 +59,9 @@ function MobileHeader({ items }: MenuProps) {
     <div className="dark:bg-bgd bg-white text-white w-full fixed z-50 lg:hidden top-0">
       <div className="p-6 flex justify-between items-center shadow-md">
         <Logo />
-        <div className="box-select-language" onClick={()=>setShowLanguage(true)}>
+        <div className="box-select-language dark:text-white dark:bg-bgd" onClick={()=>setShowLanguage(true)}>
             <p>{renderLanguage()} <CaretDown size={20} /></p>
-            <ul className={showLanguage ? "show-language list-language" : "list-language hide-language"} onMouseLeave={()=>setShowLanguage(false)}>
+            <ul className={showLanguage ? "show-language list-language dark:text-white dark:bg-bgd" : "list-language hide-language dark:text-white dark:bg-bgd"} onMouseLeave={()=>setShowLanguage(false)}>
               {getLanguage()}
             </ul>
         </div>
