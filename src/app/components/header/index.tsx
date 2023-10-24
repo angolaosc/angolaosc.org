@@ -53,9 +53,9 @@ function Header({ ...rest }) {
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
         <Logo />
         <Menu items={MENU} />
-        <div className="box-select-language" onClick={()=>setShowLanguage(true)}>
+        <div className="box-select-language dark:text-white dark:bg-bgd" onClick={()=>setShowLanguage(true)}>
           <p>{renderLanguage()} <CaretDown size={20} /></p>
-          <ul className={showLanguage ? "show-language list-language" : "list-language hide-language"} onMouseLeave={()=>setShowLanguage(false)}>
+          <ul className={showLanguage ? "show-language list-language dark:text-white dark:bg-bgd" : "list-language hide-language dark:text-white dark:bg-bgd"} onMouseLeave={()=>setShowLanguage(false)}>
             {getLanguage()}
           </ul>
         </div>
