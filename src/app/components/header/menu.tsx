@@ -22,13 +22,13 @@ function Menu({ items }: MenuProps) {
               <NextLink
                 href={url}
                 target="_blank"
-                className="dark:text-link text-gray-500 cursor-pointer hover:text-red-600 duration-300 ease-in hover:no-underline dark:hover:text-lhover"
+                className="text-gray-500 cursor-pointer hover:text-red-600 duration-300 ease-in hover:no-underline"
               >
                 {text}
               </NextLink>
             ) : (
               <Link
-                className="dark:text-link text-gray-500 cursor-pointer hover:text-red-600 duration-300 ease-in hover:no-underline dark:hover:text-lhover"
+                className="text-gray-500 cursor-pointer hover:text-red-600 duration-300 ease-in hover:no-underline"
                 smooth={true}
                 duration={1400}
                 to={url}

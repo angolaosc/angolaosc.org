@@ -9,29 +9,29 @@ function Program() {
     <section className="py-44">
       <div className="flex items-center gap-12 w-full max-w-[1216px] p-6 flex-col-reverse xl:flex-row">
         <div className="flex flex-col xl:gap-28 gap-6">
-          <h2 className="dark:text-white xl:text-5xl text-3xl font-extrabold leading-[130%]">
+          <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%]">
             Programa de Mentoria
           </h2>
 
           <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4">
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
-                <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                   Workshops
                 </h3>
-                <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                   Inclui uma semana de workshops online e
-                  treinamentos introdutórios sobre Git e outras ferramentas essenciais
+                  treinamentos introdutórios sobre Git e outras ferramentas essenciais 
                   para o desenvolvimento de software open source.
                 </p>
               </div>
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
-                <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                 Experiência Prática
                 </h3>
-                <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                 Conecta mentores experientes, colaboradores talentosos
                 e organizações de software livre para contribuir para projetos de open source.
                 </p>
@@ -39,10 +39,10 @@ function Program() {
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
-                <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
+                <h3 className="xl:text-3xl text-2xl font-bold leading-[120%]">
                   Desenvolvimento de Carreira
                 </h3>
-                <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
+                <p className="text-[#646464] xl:text-base text-sm leading-[130%]">
                  Fornece uma base sólida de conhecimento e habilidades para desenvolvedores angolanos
                  que desejam contribuir para projetos de software livre.
                 </p>
@@ -53,7 +53,7 @@ function Program() {
             href="https://mentorship.aosc.social/"
             text="Conhecer Programa de Mentoria"
             target="_blank"
-            className="w-fit bg-btn dark:text-btc"
+            className="w-fit"
           />
         </div>
         <div className="w-full xl:w-[448px]  bg-red-500 h-[624px] rounded-xl xl:flex items-end justify-center relative hidden">

@@ -13,7 +13,7 @@ function Headline({ ...rest }) {
     >
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
-          className="dark:text-white md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
+          className="md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.5 }}
@@ -22,14 +22,13 @@ function Headline({ ...rest }) {
           <br className="hidden xl:block" /> significativo
           na inovação tecnológica do país.
         </motion.h1>
-        <p className="dark:text-slate-400 md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
+        <p className="md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
           A nossa missão é promover o desenvolvimento e
           adoção de Free and Open-source Software(FOSS) em
           Angola.
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-          className="dark:bg-btn dark:text-btc"
             href={
               "https://linktr.ee/angolaosc"
             }
@@ -41,7 +40,7 @@ function Headline({ ...rest }) {
             smooth={true}
             duration={1400}
             delay={0.8}
-            className=" dark:text-slate-400 cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
+            className="cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
             Saiba Mais
           </LinkScroll>
@@ -84,12 +83,12 @@ function Headline({ ...rest }) {
               height={32}
             />
           </div>
-          <span className="dark:text-slate-400 text-base font-semibold">
+          <span className="text-base font-semibold">
             Junte-se a mais de 2,700 membros
           </span>
         </div>
       </div>
-      <div className="dark:bg-bgd bg-gray-200 rounded-lg w-[600px] hidden items-center justify-center relative xl:flex">
+      <div className="bg-gray-200 rounded-lg w-[600px] hidden items-center justify-center relative xl:flex">
         <motion.span
           className="bg-red-300 absolute top-[90px] left-24 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer"
           drag

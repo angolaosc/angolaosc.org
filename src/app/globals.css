@@ -15,10 +15,6 @@
   @apply text-red-600;
 }
 
-.dark body{
-  background-color: #1E293B;
-}
-
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;

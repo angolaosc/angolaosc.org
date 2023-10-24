@@ -24,11 +24,11 @@ function Footer({ ...rest }) {
                   width={80}
                   height={80}
                 />
-                <h3 className="dark:text-slate-400 sm:text-3xl text-2xl font-bold">
+                <h3 className="sm:text-3xl text-2xl font-bold">
                   Angola OpenSource Community
                 </h3>
               </div>
-              <p className="dark:text-slate-400 w-72">
+              <p className=" w-72">
                 We aim to develop and promote FOSS in
                 Angola.
               </p>
@@ -36,21 +36,19 @@ function Footer({ ...rest }) {
             <ButtonLink
               href="mailto:info@aosc.social"
               text="Fale conosco"
-              className="dark:bg-btn dark:text-btc text-center justify-center items-center w-56"
+              className="text-center justify-center items-center w-56"
             />
           </div>
           <div className="flex flex-row flex-wrap gap-6">
             <div className="w-52">
-              <h3 className="text-xl dark:text-white">
-                AOSC
-              </h3>
+              <h3 className="text-xl">AOSC</h3>
               <ul className="flex flex-col">
                 <li>
                   <Link
                     to={"top"}
                     smooth={true}
                     duration={1400}
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Início
                   </Link>
@@ -60,7 +58,7 @@ function Footer({ ...rest }) {
                     to={"motivations"}
                     smooth={true}
                     duration={1400}
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Motivações
                   </Link>
@@ -70,7 +68,7 @@ function Footer({ ...rest }) {
                     to={"our-team"}
                     smooth={true}
                     duration={1400}
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
                     Equipa
                   </Link>
@@ -79,7 +77,7 @@ function Footer({ ...rest }) {
                   <NextLink
                     href={"https://fest.aosc.social/"}
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     AOSFest 2023
                   </NextLink>
@@ -88,9 +86,7 @@ function Footer({ ...rest }) {
             </div>
 
             <div className="w-52">
-              <h3 className="text-xl dark:text-white">
-                Comunidades
-              </h3>
+              <h3 className="text-xl">Comunidades</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
@@ -98,7 +94,7 @@ function Footer({ ...rest }) {
                       "https://discord.com/invite/tuUDNdRzvz"
                     }
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Discord
                   </NextLink>
@@ -109,7 +105,7 @@ function Footer({ ...rest }) {
                       "https://www.facebook.com/aoscangola"
                     }
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Facebook
                   </NextLink>
@@ -120,7 +116,7 @@ function Footer({ ...rest }) {
                       "https://www.linkedin.com/company/angola-open-source-community"
                     }
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Linkedin
                   </NextLink>
@@ -131,7 +127,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/@angolaosc"
                     }
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Youtube
                   </NextLink>
@@ -139,15 +135,13 @@ function Footer({ ...rest }) {
               </ul>
             </div>
             <div className="w-52">
-              <h3 className="text-xl dark:text-white">
-                Projectos
-              </h3>
+              <h3 className="text-xl">Projectos</h3>
               <ul className="flex flex-col">
                 <li>
                   <NextLink
                     href={"https://mentorship.aosc.social"}
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     Programa de Mentoria
                   </NextLink>
@@ -158,7 +152,7 @@ function Footer({ ...rest }) {
                       "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy"
                     }
                     target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                    className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
                     The Open Source Café(TOSCA)
                   </NextLink>
@@ -168,7 +162,7 @@ function Footer({ ...rest }) {
           </div>
         </div>
         <div className="flex justify-center items-center w-full py-6 border-t flex-col gap-6 md:flex-row md:justify-between">
-          <p className="dark:text-slate-400 text-center md:text-start">
+          <p className=" text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
             Todos os direitos reservados.
@@ -176,7 +170,6 @@ function Footer({ ...rest }) {
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosc.social"
-              className="dark:text-sky-400"
             >
               {" "}
               ver código fonte,{" "}
@@ -185,14 +178,13 @@ function Footer({ ...rest }) {
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE"
-              className="dark:text-sky-400"
             >
               Licença Apache-2.0
             </NextLink>
           </p>
           <button
             onClick={() => animateScroll.scrollToTop()}
-            className="dark:text-white hover:text-black transition-colors duration-[0.3s] ease-linear"
+            className=" hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
             Voltar ao topo
           </button>

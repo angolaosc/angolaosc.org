@@ -30,7 +30,7 @@ function SectionItens({
       )}
       {...rest}
     >
-      <h2 className="dark:text-white xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
+      <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
         {title}
       </h2>
 
@@ -41,10 +41,10 @@ function SectionItens({
             className="flex flex-col gap-4  max-w-md"
           >
             {Icon}
-            <h3 className="dark:text-white text-black font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm">
+            <h3 className="text-black font-bold leading-[120%] xl:text-3xl text-2xl max-w-sm">
               {title}
             </h3>
-            <p className="dark:text-slate-400 text-[#646464] xl:text-lg text-sm leading-[130%]">
+            <p className="text-[#646464] xl:text-lg text-sm leading-[130%]">
               {body}
             </p>
           </div>
