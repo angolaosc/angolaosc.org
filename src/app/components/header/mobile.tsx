@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./logo";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import ThemeSwitcher from "../theme";
+import { CaretDown } from "phosphor-react";
+import { languages } from "./data";
+
+
+const I18N_KEY = "i18nextLng";
 
 type MenuItem = {
   id: number;
@@ -17,10 +22,49 @@ type MenuProps = {
 function MobileHeader({ items }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [language, setLanguage] = useState<any>('pt-BR')
+  const [showLanguage, setShowLanguage] = useState<boolean>(false)
+
+  const handleChangeLanguage = (value:any)=>{
+      localStorage.setItem('i18nextLng', value)
+      window.location.reload()
+  }
+
+  const getLanguage = ()=>{
+    return languages.map(lang=>{
+      return(
+          <li key={lang.id}>
+            <button onClick={()=>handleChangeLanguage(lang.code)}>{lang.language}</button>
+          </li>
+      )
+    })
+  }
+
+  const renderLanguage = ()=>{
+    switch (language) {
+      case 'pt-BR':
+          return 'PT'
+      case 'en-US':
+        return 'En'
+    }
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+        setLanguage(localStorage.getItem(I18N_KEY))
+    }
+  }, []);
+
   return (
     <div className="dark:bg-bgd bg-white text-white w-full fixed z-50 lg:hidden top-0">
       <div className="p-6 flex justify-between items-center shadow-md">
         <Logo />
+        <div className="box-select-language" onClick={()=>setShowLanguage(true)}>
+            <p>{renderLanguage()} <CaretDown size={20} /></p>
+            <ul className={showLanguage ? "show-language list-language" : "list-language hide-language"} onMouseLeave={()=>setShowLanguage(false)}>
+              {getLanguage()}
+            </ul>
+        </div>
         <ThemeSwitcher/>
         <button onClick={() => setIsOpen(!isOpen)}>
           <svg
