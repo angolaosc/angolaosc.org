@@ -5,7 +5,8 @@ const locales = {
                 app: 'My application: {{name}}'
             },
             heading: {
-                info: 'Take part now in the first face-to-face event of the Angola Open Source Commnunity in Luanda.',
+                info: 'Be part of the first face-to-face event of the Angola Open-source Commnunity in Luanda.',
+                
                 smallText: 'A small text'
             },
             nav: {
@@ -17,7 +18,7 @@ const locales = {
                button : 'Donate'
             },
             headline:{
-                title :`Creating a significant impact, on technological innovation in the country.`,
+                title :`Creating a significant impact in the tech innovation in Angola.`,
                 description : 'Our mission is to promote the development and adoption of Free and Open-source Software (FOSS) in Angola.',
                 button : 'Join the community',
                 link : 'Learn more',
@@ -34,16 +35,16 @@ const locales = {
              goal:{
                 title : "Our main goals",
                 section_1 :{
-                    title : 'Encouraging a free software culture.',
-                    description : 'Promote awareness of the benefits of open source software and encourage its use in Angola.'
+                    title : 'Encouraging the Free Software culture.',
+                    description : 'Promote awareness of the benefits of Open-source software and encourage its use in Angola.'
                 },
                 section_2 :{
-                    title : 'Accelerate open source development.',
-                    description : 'Offer resources and mentoring programs, workshops, and other events to help Angolan developers learn and contribute to excel in open source.'
+                    title : 'Accelerate Open-source development.',
+                    description : 'Provide resources, mentorship programs, workshops, and other events to help Angolan developers learn and contribute and excel in open source.'
                 },
                 section_3 :{
                     title : 'Establish partnerships and collaborations.',
-                    description : 'To strengthen the free software community in Angola by facilitating the exchange of knowledge, resources and experiences between developers.'
+                    description : 'To strengthen the Free Software community in Angola by facilitating the exchange of knowledge, resources and experiences between developers.'
                 },   
              },
              motivation:{
@@ -55,8 +56,8 @@ const locales = {
                     description: "We want to increase the recognition of the free software community in Angola."
                 },
                 section_2:{
-                    title: "Open Source code in Angola",
-                    description: "Open source software is a powerful tool for a country's technological and economic development."
+                    title: "Open-source code in Angola",
+                    description: "Open-source software is a powerful tool for a country's technological and economic development."
                 },
                 section_3:{
                     title: "Promoting innovation and technological development",
@@ -69,33 +70,33 @@ const locales = {
                 bloom:"12+ mentees",
                 section_1:{
                     title:"Workshops",
-                    description:"It includes a week of online workshops and introductory training on Git and other essential tools for open source software development."
+                    description:"It includes a week of online workshops and introductory training on Git and other essential tools for Open-source software development."
                 },
                 section_2:{
                     title:"Practical Experience",
-                    description:"It connects experienced mentors, talented collaborators and free software organizations to contribute to open source projects."
+                    description:"It connects experienced mentors, talented collaborators and Free Software organizations to contribute to Open-source projects."
                 },
                 section_3:{
                     title:"Career development",
-                    description:"It provides a solid base of knowledge and skills for Angolan developers who wish to contribute to free software projects."
+                    description:"It provides a solid base of knowledge and skills for Angolan developers who wish to contribute to Free Software projects."
                 }
              },
              team:{
                 title:"Meet our amazing core team",
                 member_1:{
-                    occupation:"FOUNDER | COMPUTER SCIENCE STUDENT",
+                    occupation:"Founder | Computer Sciencie Student",
                     description:"Collaborating researcher at the Multimodal Digital Media Analysis Lab @ IIIT-D. Passionate about Cloud Native Computing and open-source."
                 },
                 member_2:{
-                    occupation:"CO-FOUNDER | SOFTWARE DEVELOPER",
-                    description:"I'm a software developer and community leader. Passionate about sharing knowledge and enthusiastic about open source software."
+                    occupation:"CO-Founder| Software Developer",
+                    description:"I'm a software developer and community leader. Passionate about sharing knowledge and enthusiastic about Open-source software."
                 },
                 member_3:{
-                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER",
+                    occupation:"Core Member | Software Developer",
                     description:""
                 },
                 member_4:{
-                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER | UI DESIGNER",
+                    occupation:"Core Member | Software Developer | UI Designer",
                     description:"Passionate about software development, design and education"
                 },
              },
