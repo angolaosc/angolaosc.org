@@ -26,7 +26,7 @@ function MobileHeader({ items }: MenuProps) {
   const [showLanguage, setShowLanguage] = useState<boolean>(false)
 
   const handleChangeLanguage = (value:any)=>{
-      localStorage.setItem('i18nextLng', value)
+      localStorage.setItem(I18N_KEY, value)
       window.location.reload()
   }
 
