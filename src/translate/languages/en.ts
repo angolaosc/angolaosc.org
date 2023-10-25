@@ -1,4 +1,4 @@
-const messages = {
+const locales = {
     en: {
         translations: {
             titles: {
@@ -125,4 +125,4 @@ const messages = {
     }
 }
 
-export { messages }
+export { locales }

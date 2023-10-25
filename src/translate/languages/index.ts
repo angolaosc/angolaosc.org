@@ -1,9 +1,9 @@
-import { messages as portugueseMessages } from './pt'
-import { messages as englishMessages } from './en'
+import { locales as portugueseLangauge } from './pt'
+import { locales as englishLanguage } from './en'
 
-const messages = {
-    ...portugueseMessages,
-    ...englishMessages
+const locales = {
+    ...portugueseLangauge,
+    ...englishLanguage
 }
 
-export { messages }
+export { locales }
