@@ -6,7 +6,7 @@ function OurTeam() {
   return (
     <section className="py-28 pb-96" id="team">
       <div className="flex flex-col items-center justify-center gap-12 w-full max-w-[1216px] p-6">
-        <h2 className="xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
+        <h2 className="dark:text-white xl:text-5xl text-3xl font-extrabold leading-[130%] md:text-center">
           Conheça o nosso core team incrível
         </h2>
         <div className="grid xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
@@ -31,14 +31,14 @@ function OurTeam() {
                   style={{objectFit:'cover', objectPosition:'top'}}
                 />
                 <div className="py-8 md:pl-7 max-h-80">
-                  <p className="text-gray-500 text-base font-medium leading-[130%] lg:opacity-0 lg:max-h-0 overflow-hidden lg:group-hover:opacity-100 lg:group-hover:max-h-96 transition-all duration-300">
+                  <p className="dark:text-slate-400 text-gray-500 text-base font-medium leading-[130%] lg:opacity-0 lg:max-h-0 overflow-hidden lg:group-hover:opacity-100 lg:group-hover:max-h-96 transition-all duration-300">
                     {description}
                   </p>
                   <div className="flex gap-1 flex-col ">
-                    <h3 className="font-bold text-2xl leading-[130%]">
+                    <h3 className="dark:text-white font-bold text-2xl leading-[130%]">
                       {name}
                     </h3>
-                    <span className="text-base text-red-500 leading-[130%] font-bold uppercase">
+                    <span className="dark:text-btn   text-base text-red-500 leading-[130%] font-bold uppercase">
                       {ocupation}
                     </span>
                   </div>

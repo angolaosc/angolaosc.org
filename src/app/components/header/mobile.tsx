@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "./logo";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
+import ThemeSwitcher from "../theme";
 
 type MenuItem = {
   id: number;
@@ -17,9 +18,10 @@ function MobileHeader({ items }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white text-white w-full fixed z-50 lg:hidden top-0">
+    <div className="dark:bg-bgd bg-white text-white w-full fixed z-50 lg:hidden top-0">
       <div className="p-6 flex justify-between items-center shadow-md">
         <Logo />
+        <ThemeSwitcher/>
         <button onClick={() => setIsOpen(!isOpen)}>
           <svg
             className="w-8 h-8"
@@ -39,7 +41,7 @@ function MobileHeader({ items }: MenuProps) {
       </div>
 
       {isOpen && (
-        <header className="bg-red-600 absolute left-0 right-0 h-screen p-6">
+        <header className="dark:bg-bgd bg-red-600 absolute left-0 right-0 h-screen p-6">
           <ul className="flex items-start gap-3 flex-col">
             {items.map(({ id, text, url }) => (
               <li
