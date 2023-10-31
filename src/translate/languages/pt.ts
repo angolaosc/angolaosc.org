@@ -5,7 +5,7 @@ const locales = {
                 app: 'Minha aplicação: {{name}}'
             },
             heading: {
-                info: 'Participe agora do primeiro evento presencial da Angola Open Source Commnunity em Luanda.',
+                info: 'Participe agora do primeiro evento presencial da Angola Open-source Commnunity em Luanda.',
             },
             nav: {
                 link_1 : 'Inicio',
@@ -33,11 +33,11 @@ const locales = {
                 title : "Nossos principais objetivos",
                 section_1 :{
                     title : 'Fomentar a cultura do software livre.',
-                    description : 'Promover a conscientização sobre os benefícios do software de código aberto e incentivar seu uso em Angola.'
+                    description : 'Promover a conscientização sobre os benefícios do software open-source e incentivar seu uso em Angola.'
                 },
                 section_2 :{
                     title : 'Acelerar o desenvolvimento de código aberto.',
-                    description : 'Oferecer recursos e programas de mentoria, workshops, e outros eventos para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no código aberto.'
+                    description : 'Oferecer recursos e programas de mentoria, workshops, e outros eventos para ajudar o desenvolvedor angolano aprender, e contribuir a se destacar no movimento código aberto.'
                 },
                 section_3 :{
                     title : 'Estabelecer parcerias e colaborações.',
@@ -54,7 +54,7 @@ const locales = {
                 },
                 section_2:{
                     title: "Código Aberto em Angola",
-                    description: "O software de código aberto é uma ferramenta poderosa para o desenvolvimento tecnológico e econômico de um país."
+                    description: "O software de open-source é uma ferramenta poderosa para o desenvolvimento tecnológico e econômico de um país."
                 },
                 section_3:{
                     title: "Promover inovação e desenvolvimento tecnológico",
@@ -71,7 +71,7 @@ const locales = {
                 },
                 section_2:{
                     title:"Experiência Prática",
-                    description:"Conecta mentores experientes, colaboradores talentosos e organizações de software livre para contribuir para projetos de open source."
+                    description:"Conecta mentores experientes, colaboradores talentosos e organizações de software livre para contribuir para projetos de open-source."
                 },
                 section_3:{
                     title:"Desenvolvimento de Carreira",
@@ -86,7 +86,7 @@ const locales = {
                 },
                 member_2:{
                     occupation:"CO-FOUNDER | SOFTWARE DEVELOPER",
-                    description:"Sou desenvolvedor de software e líder comunitário. Apaixonado por compartilhar conhecimento e entusiasta de softwares de código aberto."
+                    description:"Sou desenvolvedor de software e líder comunitário. Apaixonado por compartilhar conhecimento e entusiasta de softwares de open-source"
                 },
                 member_3:{
                     occupation:"CORE MEMBER | SOFTWARE DEVELOPER",
