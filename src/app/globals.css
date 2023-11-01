@@ -82,3 +82,50 @@ img {
 .animate-slide-left {
   animation: slide-left 20s linear infinite;
 }
+
+.box-select-language{
+  position: relative;
+  cursor: pointer;
+}
+.list-language{
+  top:0;
+  position: absolute;
+  width: 120px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(209, 209, 209, 0.253);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+  z-index: 9;
+}
+.hide-language{
+  height: 0 !important;
+}
+.show-language{
+  height: 70px !important;
+}
+.list-language li{
+  height: 35px;
+  padding:0 12px;
+  display: flex;
+  align-items: center;
+  transition: .7s ease-in-out;
+  cursor: pointer;
+}
+.list-language li:hover{
+  background-color: #ef4444;
+  color:#fff;
+}
+.box-select-language p{
+  display: flex;
+  gap:8px;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .box-select-language{
+    color:#000
+  }
+  .list-language{
+    top:-12px
+  }
+}
