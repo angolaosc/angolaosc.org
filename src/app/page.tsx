@@ -4,6 +4,7 @@ import Headline from "./components/headline";
 import Tape from "./components/tape";
 import Purpose from "./components/section-itens";
 import Motivations from "./components/motivations";
+import Metrics from "./components/metrics"
 import { Element } from "react-scroll";
 import { PURPOSES } from "@/utils/data/purposes";
 import OurTeam from "./components/our-team";
@@ -49,6 +50,9 @@ export default function Home() {
       </Element>
       <Element name="program">
         <Program />
+      </Element>
+      <Element name="metrics">
+          <Metrics/>
       </Element>
       <Element name="our-team">
         <OurTeam />
