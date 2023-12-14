@@ -4,6 +4,7 @@ import ButtonLink from "../buttonLink";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import Image from "next/image";
+import { i18n } from "@/translate/i18n";
 
 function Footer({ ...rest }) {
   const date = new Date();
@@ -35,7 +36,7 @@ function Footer({ ...rest }) {
             </div>
             <ButtonLink
               href="mailto:info@aosc.social"
-              text="Fale conosco"
+              text={i18n.t('footer.button')}
               className="dark:bg-btn dark:text-btc text-center justify-center items-center w-56"
             />
           </div>
@@ -52,7 +53,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    Início
+                    {i18n.t('footer.aosc.link_1')}
                   </Link>
                 </li>
                 <li>
@@ -62,7 +63,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    Motivações
+                   {i18n.t('footer.aosc.link_2')}
                   </Link>
                 </li>
                 <li>
@@ -72,7 +73,7 @@ function Footer({ ...rest }) {
                     duration={1400}
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear cursor-pointer"
                   >
-                    Equipa
+                    {i18n.t('footer.aosc.link_3')}
                   </Link>
                 </li>
                 <li>
@@ -89,7 +90,7 @@ function Footer({ ...rest }) {
 
             <div className="w-52">
               <h3 className="text-xl dark:text-white">
-                Comunidades
+              {i18n.t('footer.community.title')}
               </h3>
               <ul className="flex flex-col">
                 <li>
@@ -140,7 +141,7 @@ function Footer({ ...rest }) {
             </div>
             <div className="w-52">
               <h3 className="text-xl dark:text-white">
-                Projectos
+              {i18n.t('footer.project.title')}
               </h3>
               <ul className="flex flex-col">
                 <li>
@@ -149,7 +150,7 @@ function Footer({ ...rest }) {
                     target="_blank"
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    Programa de Mentoria
+                   {i18n.t('footer.project.link_1')}
                   </NextLink>
                 </li>
                 <li>
@@ -171,7 +172,7 @@ function Footer({ ...rest }) {
           <p className="dark:text-slate-400 text-center md:text-start">
             © {year} - Angola Open Source Communiy.
             <br />
-            Todos os direitos reservados.
+            {i18n.t('footer.copyright.info_1')}
             <br />
             <NextLink
               target="_blank"
@@ -179,22 +180,22 @@ function Footer({ ...rest }) {
               className="dark:text-sky-400"
             >
               {" "}
-              ver código fonte,{" "}
+              {i18n.t('footer.copyright.link_1')}{" "}
             </NextLink>
-            licenciado sob{" "}
+            {i18n.t('footer.copyright.info_2')}{" "}
             <NextLink
               target="_blank"
               href="https://github.com/angolaosc/aosf-website/blob/main/LICENSE"
               className="dark:text-sky-400"
             >
-              Licença Apache-2.0
+             {i18n.t('footer.copyright.link_2')}
             </NextLink>
           </p>
           <button
             onClick={() => animateScroll.scrollToTop()}
             className="dark:text-white hover:text-black transition-colors duration-[0.3s] ease-linear"
           >
-            Voltar ao topo
+            {i18n.t('footer.button_top')}
           </button>
         </div>
       </div>
