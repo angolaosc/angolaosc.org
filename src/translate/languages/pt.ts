@@ -4,9 +4,6 @@ const locales = {
             titles: {
                 app: 'Minha aplicação: {{name}}'
             },
-            heading: {
-                info: 'Participe agora do primeiro evento presencial da Angola Open-source Commnunity em Luanda.',
-            },
             nav: {
                 link_1 : 'Inicio',
                 link_2 : 'Motivações',
@@ -42,7 +39,7 @@ const locales = {
                 section_3 :{
                     title : 'Estabelecer parcerias e colaborações.',
                     description : 'Fortalecer a comunidade de software livre em Angola, facilitando a troca de conhecimento, recursos e experiências entre desenvolvedores.'
-                },   
+                },
             },
             motivation:{
                 title: "Nossas Motivações",

@@ -47,7 +47,7 @@ function Header({ ...rest }) {
 
   return (
     <header
-      className="dark:bg-bgd  w-full flex-col items-center justify-center px-6 hidden lg:flex fixed top-10 bg-white z-50"
+      className="dark:bg-bgd  w-full flex-col items-center justify-center px-6 hidden lg:flex fixed bg-white z-50"
       {...rest}
     >
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
