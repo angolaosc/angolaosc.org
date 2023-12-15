@@ -8,6 +8,7 @@ import { Element } from "react-scroll";
 import { PURPOSES } from "@/utils/data/purposes";
 import OurTeam from "./components/our-team";
 import Program from "./components/program";
+import Metrics from './components/metrics';
 import MobileHeader from "./components/header/mobile";
 import { MENU } from "./components/header/data";
 import Footer from "./components/footer";
@@ -42,6 +43,9 @@ export default function Home() {
       </Element>
       <Element name="program">
         <Program />
+      </Element>
+      <Element name="metrics">
+          <Metrics />
       </Element>
       <Element name="our-team">
         <OurTeam />

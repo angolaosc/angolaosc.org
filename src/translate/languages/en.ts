@@ -76,6 +76,21 @@ const locales = {
                     description:"It provides a solid base of knowledge and skills for Angolan developers who wish to contribute to Free Software projects."
                 }
              },
+             metrics: {
+              title: 'Metrics',
+              metric_1: {
+                title: "Number of members",
+              },
+              metric_2: {
+                title: "Number of mentees",
+              },
+              metric_3: {
+                title: "Number of evangelized developers",
+              },
+              metric_4: {
+                title: "Workshops and Events",
+              }
+             },
              team:{
                 title:"Meet our amazing core team",
                 member_1:{

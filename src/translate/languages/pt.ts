@@ -75,6 +75,21 @@ const locales = {
                     description:"Fornece uma base sólida de conhecimento e habilidades para desenvolvedores angolanos que desejam contribuir para projetos de software livre."
                 }
              },
+             metrics: {
+              title: 'Métricas',
+              metric_1: {
+                title: "Número de membros",
+              },
+              metric_2: {
+                title: "Número de mentorados",
+              },
+              metric_3: {
+                title: "Número de desenvolvedores envagelizados",
+              },
+              metric_4: {
+                title: "Workshops e Eventos",
+              }
+             },
              team:{
                 title:"Conheça o nosso core team incrível",
                 member_1:{
