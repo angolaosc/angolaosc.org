@@ -5,7 +5,7 @@ const locales = {
                 app: 'Minha aplicação: {{name}}'
             },
             heading: {
-                info: 'Participe agora do primeiro evento presencial da Angola Open-source Commnunity em Luanda.',
+                info: 'Próximo evento: .NET Conf Luanda 2023 em Luanda no dia 10 de Fevereiro de 2024',
             },
             nav: {
                 link_1 : 'Inicio',
