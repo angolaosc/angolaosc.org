@@ -28,8 +28,13 @@ export const MENU = [
   },
   {
     id: 6,
-    text: "TOSCA",
+    text: "Podcast",
     url: "https://www.youtube.com/playlist?list=PLso4Zv7njkDM-AjI3Z0oaFcPZdT7-fmLy",
+  },
+  {
+    id: 7,
+    text: "Blog",
+    url: "https://blog.aosc.social",
   },
 ];
 

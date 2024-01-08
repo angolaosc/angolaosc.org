@@ -5,8 +5,7 @@ const locales = {
                 app: 'My application: {{name}}'
             },
             heading: {
-                info: 'Be part of the first in-person event of the Angola Open-source Commnunity in Luanda.',
-                
+                info: 'Upcoming event: .NET Conf Luanda 2023 in Luanda on 10th February 2024',
                 smallText: 'A small text'
             },
             nav: {
