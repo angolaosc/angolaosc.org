@@ -3,22 +3,22 @@ import { i18n } from "@/translate/i18n";
 export const MENU = [
   {
     id: 1,
-    text: i18n.t('nav.link_1'),
+    text: i18n.t("nav.link_1"),
     url: "top",
   },
   {
     id: 2,
-    text: i18n.t('nav.link_2'),
+    text: i18n.t("nav.link_2"),
     url: "motivations",
   },
   {
     id: 3,
-    text: i18n.t('nav.link_3'),
+    text: i18n.t("nav.link_3"),
     url: "program",
   },
   {
     id: 4,
-    text: i18n.t('nav.link_4'),
+    text: i18n.t("nav.link_4"),
     url: "our-team",
   },
   {
@@ -38,16 +38,25 @@ export const MENU = [
   },
 ];
 
-
 export const languages = [
   {
-    id:1,
-    language:'Português',
-    code:'pt-BR',
+    id: 1,
+    language: "Português",
+    code: "pt-BR",
   },
   {
-    id:2,
-    language:'English',
-    code:'en-US',
-  }
-]
+    id: 2,
+    language: "English",
+    code: "en-US",
+  },
+  {
+    id: 3,
+    language: "Frances",
+    code: "fr-FR",
+  },
+  {
+    id: 4,
+    language: "Espanhol",
+    code: "es-ES",
+  },
+];

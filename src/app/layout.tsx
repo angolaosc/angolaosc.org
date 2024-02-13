@@ -8,16 +8,21 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aosc.social/'),
-  title: { default: 'Angola Open Source Community', template: '' },
-  description: 'Criando um impacto significativo na inovação tecnológica do país',
+  metadataBase: new URL("https://aosc.social/"),
+  title: {
+    default: "Angola Open Source Community",
+    template: "",
+  },
+  description:
+    "Criando um impacto significativo na inovação tecnológica do país",
   openGraph: {
-    title: 'Angola Open Source Community',
-    description: 'Criando um impacto significativo na inovação tecnológica do país.',
-    url: 'https://aosc.social/',
-    siteName: 'Angola Open Source Community',
-    locale: 'en_US',
-    type: 'website',
+    title: "Angola Open Source Community",
+    description:
+      "Criando um impacto significativo na inovação tecnológica do país.",
+    url: "https://aosc.social/",
+    siteName: "Angola Open Source Community",
+    locale: "pt_AO",
+    type: "website",
   },
   robots: {
     index: true,
@@ -25,14 +30,14 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   twitter: {
-    title: 'Angola Open Source Community',
-    card: 'summary_large_image',
+    title: "Angola Open Source Community",
+    card: "summary_large_image",
   },
 };
 

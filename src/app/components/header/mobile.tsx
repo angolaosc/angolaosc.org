@@ -6,7 +6,6 @@ import ThemeSwitcher from "../theme";
 import { CaretDown } from "phosphor-react";
 import { languages } from "./data";
 
-
 const I18N_KEY = "i18nextLng";
 
 type MenuItem = {
@@ -22,36 +21,48 @@ type MenuProps = {
 function MobileHeader({ items }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [language, setLanguage] = useState<any>('pt-BR')
-  const [showLanguage, setShowLanguage] = useState<boolean>(false)
+  const [language, setLanguage] = useState<any>("pt-BR");
+  const [showLanguage, setShowLanguage] =
+    useState<boolean>(false);
 
-  const handleChangeLanguage = (value:any)=>{
-      localStorage.setItem(I18N_KEY, value)
-      window.location.reload()
-  }
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem(I18N_KEY, value);
+    window.location.reload();
+  };
 
-  const getLanguage = ()=>{
-    return languages.map(lang=>{
-      return(
-          <li key={lang.id}>
-            <button onClick={()=>handleChangeLanguage(lang.code)}>{lang.language}</button>
-          </li>
-      )
-    })
-  }
+  const getLanguage = () => {
+    return languages.map((lang) => {
+      return (
+        <li key={lang.id}>
+          <button
+            onClick={() => handleChangeLanguage(lang.code)}
+          >
+            {lang.language}
+          </button>
+        </li>
+      );
+    });
+  };
 
-  const renderLanguage = ()=>{
+  const renderLanguage = () => {
     switch (language) {
-      case 'pt-BR':
-          return 'PT'
-      case 'en-US':
-        return 'En'
+      case "pt-BR":
+        return "PT";
+      case "en-US":
+        return "En";
+      case "fr-FR":
+        return "Fr";
+      case "es-ES":
+        return "Es";
     }
-  }
+  };
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-        setLanguage(localStorage.getItem(I18N_KEY))
+    if (
+      typeof window !== "undefined" &&
+      window.localStorage
+    ) {
+      setLanguage(localStorage.getItem(I18N_KEY));
     }
   }, []);
 
@@ -59,14 +70,29 @@ function MobileHeader({ items }: MenuProps) {
     <div className="dark:bg-bgd bg-white text-white w-full fixed z-50 lg:hidden top-0">
       <div className="p-6 flex justify-between items-center shadow-md">
         <Logo />
-        <div className="box-select-language dark:text-white dark:bg-bgd" onClick={()=>setShowLanguage(true)}>
-            <p>{renderLanguage()} <CaretDown size={20} /></p>
-            <ul className={showLanguage ? "show-language list-language dark:text-white dark:bg-bgd" : "list-language hide-language dark:text-white dark:bg-bgd"} onMouseLeave={()=>setShowLanguage(false)}>
-              {getLanguage()}
-            </ul>
+        <div
+          className="box-select-language dark:text-white dark:bg-bgd"
+          onClick={() => setShowLanguage(true)}
+        >
+          <p className="text-gray-800 dark:text-white">
+            {renderLanguage()} <CaretDown size={20} />
+          </p>
+          <ul
+            className={
+              showLanguage
+                ? "show-language list-language text-gray-800 dark:text-white dark:bg-bgd"
+                : "list-language hide-language text-gray-800 dark:text-white dark:bg-bgd"
+            }
+            onMouseLeave={() => setShowLanguage(false)}
+          >
+            {getLanguage()}
+          </ul>
         </div>
-        <ThemeSwitcher/>
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <ThemeSwitcher />
+        <button
+          title="Click"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <svg
             className="w-8 h-8"
             fill="none"

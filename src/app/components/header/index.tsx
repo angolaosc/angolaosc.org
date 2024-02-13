@@ -11,37 +11,49 @@ import { languages } from "./data";
 const I18N_KEY = "i18nextLng";
 
 function Header({ ...rest }) {
+  const [language, setLanguage] = useState<any>("pt-BR");
+  const [showLanguage, setShowLanguage] =
+    useState<boolean>(false);
 
-  const [language, setLanguage] = useState<any>('pt-BR')
-  const [showLanguage, setShowLanguage] = useState<boolean>(false)
+  const handleChangeLanguage = (value: any) => {
+    localStorage.setItem(I18N_KEY, value);
+    window.location.reload();
+  };
 
-  const handleChangeLanguage = (value:any)=>{
-      localStorage.setItem(I18N_KEY, value)
-      window.location.reload()
-  }
+  const getLanguage = () => {
+    console.log("Olhe as linguagens", languages);
+    return languages.map((lang) => {
+      return (
+        <li key={lang.id}>
+          <button
+            onClick={() => handleChangeLanguage(lang.code)}
+          >
+            {lang.language}
+          </button>
+        </li>
+      );
+    });
+  };
 
-  const getLanguage = ()=>{
-    return languages.map(lang=>{
-      return(
-          <li key={lang.id}>
-            <button onClick={()=>handleChangeLanguage(lang.code)}>{lang.language}</button>
-          </li>
-      )
-    })
-  }
-
-  const renderLanguage = ()=>{
+  const renderLanguage = () => {
     switch (language) {
-      case 'pt-BR':
-          return 'Português'
-      case 'en-US':
-        return 'English'
+      case "pt-BR":
+        return "Português";
+      case "en-US":
+        return "English";
+      case "fr-FR":
+        return "Frances";
+      case "es-ES":
+        return "Espanhol";
     }
-  }
+  };
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-        setLanguage(localStorage.getItem(I18N_KEY))
+    if (
+      typeof window !== "undefined" &&
+      window.localStorage
+    ) {
+      setLanguage(localStorage.getItem(I18N_KEY));
     }
   }, []);
 
@@ -53,18 +65,30 @@ function Header({ ...rest }) {
       <div className="w-full max-w-[1216px] py-4 flex items-center justify-between">
         <Logo />
         <Menu items={MENU} />
-        <div className="box-select-language dark:text-white dark:bg-bgd" onClick={()=>setShowLanguage(true)}>
-          <p>{renderLanguage()} <CaretDown size={20} /></p>
-          <ul className={showLanguage ? "show-language list-language dark:text-white dark:bg-bgd" : "list-language hide-language dark:text-white dark:bg-bgd"} onMouseLeave={()=>setShowLanguage(false)}>
+        <div
+          className="box-select-language dark:text-white dark:bg-bgd"
+          onClick={() => setShowLanguage(true)}
+        >
+          <p>
+            {renderLanguage()} <CaretDown size={20} />
+          </p>
+          <ul
+            className={
+              showLanguage
+                ? "show-language list-language dark:text-white dark:bg-bgd"
+                : "list-language hide-language dark:text-white dark:bg-bgd"
+            }
+            onMouseLeave={() => setShowLanguage(false)}
+          >
             {getLanguage()}
           </ul>
         </div>
-        <ThemeSwitcher/>
+        <ThemeSwitcher />
         <ButtonLink
           className="dark:bg-btn dark:text-btc"
           href={"https://opencollective.com/aosc"}
           target="_blank"
-          text={i18n.t('nav.button')}
+          text={i18n.t("nav.button")}
         />
       </div>
       <hr />

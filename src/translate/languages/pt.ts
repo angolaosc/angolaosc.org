@@ -6,6 +6,7 @@ const locales = {
             },
             heading: {
                 info: 'Próximo evento: .NET Conf Luanda 2023 em Luanda no dia 10 de Fevereiro de 2024',
+                smallText: 'Um pequeno texto'
             },
             nav: {
                 link_1 : 'Inicio',
@@ -42,7 +43,7 @@ const locales = {
                 section_3 :{
                     title : 'Estabelecer parcerias e colaborações.',
                     description : 'Fortalecer a comunidade de software livre em Angola, facilitando a troca de conhecimento, recursos e experiências entre desenvolvedores.'
-                },   
+                },
             },
             motivation:{
                 title: "Nossas Motivações",

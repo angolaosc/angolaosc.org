@@ -101,9 +101,11 @@ img {
 .hide-language{
   height: 0 !important;
 }
-.show-language{
-  height: 70px !important;
-}
+
+/* .show-language{
+  height: 105px !important;
+} */
+
 .list-language li{
   height: 35px;
   padding:0 12px;
