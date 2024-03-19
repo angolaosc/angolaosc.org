@@ -20,7 +20,7 @@ const locales = {
                 description: 'A nossa missão é promover o desenvolvimento e adoção de Free and Open-source Software(FOSS) em Angola.',
                 button: 'Juntar-me a comunidade',
                 link: 'Saber mais',
-                info:'Junte-se a mais de 200 membros',
+                info:'Junte-se a mais de 430 membros',
                 bloom_1: 'Software Livre',
                 bloom_2: 'Colaboração'
              },
