@@ -87,7 +87,7 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <NextLink
-                    href={"https://drive.google.com/file/d/1uIQixQ0G0wGaDBTDUTBh5FzMvjejb8PW/view?usp=drive_link"}
+                    href={"https://drive.google.com/drive/folders/1t3l-7mNUJOUaO0IzH9EyYJnIwyd10Za2?usp=sharing"}
                     target="_blank"
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >

@@ -21,7 +21,7 @@ const locales = {
                 description : 'Our mission is to promote the development and adoption of Free and Open-source Software (FOSS) in Angola.',
                 button : 'Join the community',
                 link : 'Learn more',
-                info :'Join 200+ members',
+                info :'Join 430+ members',
                 bloom_1 : 'Free Software',
                 bloom_2 : 'Collaboration'
 
@@ -83,8 +83,8 @@ const locales = {
              team:{
                 title:"Meet our amazing core team",
                 member_1:{
-                    occupation:"Founder | Computer Sciencie Student",
-                    description:"Collaborating researcher at the Multimodal Digital Media Analysis Lab @ IIIT-D. Passionate about Cloud Native Computing and open-source."
+                    occupation:"Founder | Computer Science Student",
+                    description:"Ex Co-researcher at the Multimodal Digital Media Analysis Lab @ IIIT-D. Passionate about Cloud Native Computing and open-source."
                 },
                 member_2:{
                     occupation:"CO-Founder| Software Developer",
