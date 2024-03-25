@@ -17,7 +17,7 @@ function Logo() {
         height={32}
       />
       <h3 className="dark:text-slate-400 text-sm font-semibold leading-4 text-black">
-        Angola OpenSource Community
+        Angola Open-source Community
       </h3>
     </Link>
   );

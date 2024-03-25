@@ -67,7 +67,7 @@ const locales = {
                 bloom:"+12 mentorados",
                 section_1:{
                     title:"Workshops",
-                    description:"Inclui uma semana de workshops online e treinamentos introdutórios sobre Git e outras ferramentas essenciais para o desenvolvimento de software open source."
+                    description:"Inclui uma semana de workshops online e treinamentos introdutórios sobre Git e outras ferramentas essenciais para o desenvolvimento de software Open-source."
                 },
                 section_2:{
                     title:"Experiência Prática",
