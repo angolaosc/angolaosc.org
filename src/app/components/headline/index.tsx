@@ -97,7 +97,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          Open Source
+          Open-source
         </motion.span>
         <motion.span
           className="bg-violet-300 absolute top-3/4 left-24 text-black font-bold text-base rounded-full px-7 py-3 cursor-pointer z-30"

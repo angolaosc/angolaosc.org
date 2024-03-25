@@ -32,7 +32,7 @@ function Tape({
         {[...Array(2)].map((_, idx) => (
           <span key={idx} className="text-2xl font-bold">
             <ul className="flex gap-4 md:gap-8">
-              <li>Open Source</li>
+              <li>Open-source</li>
               <li>.</li>
               <li>{i18n.t('tape.text_2')}</li>
               <li>.</li>
@@ -40,7 +40,7 @@ function Tape({
               <li>.</li>
               <li>{i18n.t('tape.text_3')}</li>
               <li>.</li>
-              <li>Open Source</li>
+              <li>Open-source</li>
               <li>.</li>
               <li>{i18n.t('tape.text_2')}</li>
               <li>.</li>
