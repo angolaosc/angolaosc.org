@@ -20,13 +20,13 @@ function Footer({ ...rest }) {
             <div className="flex flex-col">
               <div className="flex flex-row gap-3 max-w-sm max-[375px]:flex-col">
                 <Image
-                  alt="logo Angola Open Source Community"
+                  alt="logo Angola Open-source Community"
                   src={"/logo-aosc.svg"}
                   width={80}
                   height={80}
                 />
                 <h3 className="dark:text-slate-400 sm:text-3xl text-2xl font-bold">
-                  Angola OpenSource Community
+                  Angola Open-source Community
                 </h3>
               </div>
               <p className="dark:text-slate-400 w-72">
@@ -87,7 +87,7 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <NextLink
-                    href={"https://drive.google.com/file/d/1uIQixQ0G0wGaDBTDUTBh5FzMvjejb8PW/view?usp=drive_link"}
+                    href={"https://drive.google.com/drive/folders/1t3l-7mNUJOUaO0IzH9EyYJnIwyd10Za2?usp=sharing"}
                     target="_blank"
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
@@ -170,7 +170,7 @@ function Footer({ ...rest }) {
                     target="_blank"
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
-                    The Open Source Café(TOSCA)
+                    The Open-source Café(TOSCA)
                   </NextLink>
                 </li>
               </ul>
@@ -179,7 +179,7 @@ function Footer({ ...rest }) {
         </div>
         <div className="flex justify-center items-center w-full py-6 border-t flex-col gap-6 md:flex-row md:justify-between">
           <p className="dark:text-slate-400 text-center md:text-start">
-            © {year} - Angola Open Source Communiy.
+            © {year} - Angola Open-source Communiy.
             <br />
             {i18n.t('footer.copyright.info_1')}
             <br />

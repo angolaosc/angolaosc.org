@@ -5,7 +5,7 @@ const locales = {
                 app: 'Minha aplicação: {{name}}'
             },
             heading: {
-                info: 'Próximo evento: .NET Conf Luanda 2023 em Luanda no dia 10 de Fevereiro de 2024',
+                info: 'Nenhum evento se avizinha! Fique ligado na comunidade para saber mais!',
             },
             nav: {
                 link_1 : 'Inicio',
@@ -20,7 +20,7 @@ const locales = {
                 description: 'A nossa missão é promover o desenvolvimento e adoção de Free and Open-source Software(FOSS) em Angola.',
                 button: 'Juntar-me a comunidade',
                 link: 'Saber mais',
-                info:'Junte-se a mais de 200 membros',
+                info:'Junte-se a mais de 430 membros',
                 bloom_1: 'Software Livre',
                 bloom_2: 'Colaboração'
              },
@@ -67,7 +67,7 @@ const locales = {
                 bloom:"+12 mentorados",
                 section_1:{
                     title:"Workshops",
-                    description:"Inclui uma semana de workshops online e treinamentos introdutórios sobre Git e outras ferramentas essenciais para o desenvolvimento de software open source."
+                    description:"Inclui uma semana de workshops online e treinamentos introdutórios sobre Git e outras ferramentas essenciais para o desenvolvimento de software Open-source."
                 },
                 section_2:{
                     title:"Experiência Prática",
