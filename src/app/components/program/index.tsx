@@ -7,48 +7,48 @@ import { i18n } from "@/translate/i18n";
 
 function Program() {
   return (
-    <section className="py-44">
-      <div className="flex items-center gap-12 w-full max-w-[1216px] p-6 flex-col-reverse xl:flex-row">
+    <section className="py-20">
+      <div className="flex items-center gap-12 w-full max-w-[1216px] flex-col-reverse xl:flex-row">
         <div className="flex flex-col xl:gap-28 gap-6">
           <h2 className="dark:text-white xl:text-5xl text-3xl font-extrabold leading-[130%]">
-          {i18n.t('program.title')}
+            {i18n.t("program.title")}
           </h2>
 
           <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4">
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
-                {i18n.t('program.section_1.title')}
+                  {i18n.t("program.section_1.title")}
                 </h3>
                 <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
-                {i18n.t('program.section_1.description')}
+                  {i18n.t("program.section_1.description")}
                 </p>
               </div>
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
-                {i18n.t('program.section_2.title')}
+                  {i18n.t("program.section_2.title")}
                 </h3>
                 <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
-                {i18n.t('program.section_2.description')}
+                  {i18n.t("program.section_2.description")}
                 </p>
               </div>
             </li>
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
-                {i18n.t('program.section_3.title')}
+                  {i18n.t("program.section_3.title")}
                 </h3>
                 <p className="dark:text-slate-400 text-[#646464] xl:text-base text-sm leading-[130%]">
-                {i18n.t('program.section_3.description')}
+                  {i18n.t("program.section_3.description")}
                 </p>
               </div>
             </li>
           </ul>
           <ButtonLink
             href="https://mentorship.aosc.social/"
-            text= {i18n.t('program.button')}
+            text={i18n.t("program.button")}
             target="_blank"
             className="w-fit bg-btn dark:text-btc"
           />
@@ -59,7 +59,7 @@ function Program() {
               <Check size={16} weight="bold" color="#fff" />
             </div>
             <p className="text-black text-base leading-[120%] font-semibold max-w-xs">
-            {i18n.t('program.bloom')}
+              {i18n.t("program.bloom")}
             </p>
           </div>
           <div className="bg-white p-8 rounded-[50%] absolute left-[-50px] top-[130px] spinner">

@@ -1,29 +1,28 @@
-import React from "react";
+import { i18n } from "@/translate/i18n";
 import { twMerge } from "tailwind-merge";
 import ButtonLink from "../buttonLink";
 import { MOTIVATIONS } from "./data";
-import { i18n } from "@/translate/i18n";
 
 function Motivations({ className, ...rest }: any) {
   return (
     <section
       className={twMerge(
-        "flex flex-col items-center gap-12 px-6 w-full xl:py-[200px]  bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom",
+        "flex flex-col items-center py-20 gap-12 px-6 w-full xl:py-[50px] bg-[url('/black-logo.svg/')] bg-[#171717] bg-no-repeat bg-left-bottom",
         className,
       )}
       {...rest}
     >
-      <div className="w-full max-w-[1216px] py-44 flex justify-between flex-col xl:flex-row gap-7">
+      <div className="w-full max-w-[1216px] flex justify-between flex-col xl:flex-row gap-7">
         <div className="max-w-[490px] flex flex-col gap-3">
           <h2 className="md:text-5xl text-3xl font-bold leading-[130%] text-white">
-          {i18n.t('motivation.title')}
+            {i18n.t("motivation.title")}
           </h2>
           <p className="md:text-xl text-sm font-medium leading-[150%] text-white">
-          {i18n.t('motivation.description')}
+            {i18n.t("motivation.description")}
           </p>
           <ButtonLink
             href={"https://linktr.ee/angolaosc"}
-            text= {i18n.t('motivation.button')}
+            text={i18n.t("motivation.button")}
             target="_blank"
             className="dark:bg-btn dark:text-btc md:max-w-fit w-full text-center justify-center md:justify-start"
           />

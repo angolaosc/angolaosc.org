@@ -22,7 +22,7 @@ export default function Home() {
       <div className="gap-2 items-center justify-center pointer-events-none select-none z-50 fixed top-0 bg-violet-600 right-0 left-0 p-6 py-2 hidden lg:flex">
         <i>🇦🇴</i>
         <span className="text-white">
-        {i18n.t('heading.info')}
+          {i18n.t("heading.info")}
         </span>
       </div>
 
@@ -40,8 +40,8 @@ export default function Home() {
       <Element name="purposes">
         <Purpose
           data={PURPOSES}
-          title={i18n.t('goal.title')}
-          className="py-52"
+          title={i18n.t("goal.title")}
+          className="py-20"
         />
       </Element>
       <Element name="motivations">

@@ -1,5 +1,5 @@
-import { Brain, Coffee, Confetti } from "phosphor-react";
 import { i18n } from "@/translate/i18n";
+import { Brain, Coffee, Confetti } from "phosphor-react";
 
 export const PURPOSES = [
   {
@@ -7,16 +7,16 @@ export const PURPOSES = [
     Icon: (
       <Brain weight="duotone" size={40} color="#FE5C5C" />
     ),
-    title: i18n.t('goal.section_1.title'),
-    body: i18n.t('goal.section_1.description'),
+    title: i18n.t("goal.section_1.title"),
+    body: i18n.t("goal.section_1.description"),
   },
   {
     id: 2,
     Icon: (
       <Coffee weight="duotone" size={40} color="#FE5C5C" />
     ),
-    title: i18n.t('goal.section_2.title'),
-    body: i18n.t('goal.section_2.description'),
+    title: i18n.t("goal.section_2.title"),
+    body: i18n.t("goal.section_2.description"),
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const PURPOSES = [
         color="#FE5C5C"
       />
     ),
-    title: i18n.t('goal.section_3.title'),
-    body: i18n.t('goal.section_3.description'),
+    title: i18n.t("goal.section_3.title"),
+    body: i18n.t("goal.section_3.description"),
   },
 ];
