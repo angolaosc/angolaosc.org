@@ -47,36 +47,36 @@ function Headline({ ...rest }) {
           <div className="flex -space-x-3 overflow-hidden p-2 px-0">
             <Image
               className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
+              src="/antonio.jpg"
+              alt="avatar"
               width={32}
               height={32}
             />
             <Image
               className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
+              src="/lazaro.jpg"
+              alt="avatar"
               width={32}
               height={32}
             />
             <Image
               className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
+              src="/danguya.jpeg"
+              alt="avatar"
               width={32}
               height={32}
             />
             <Image
               className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
+              src="/claudio.jpeg"
+              alt="avatar"
               width={32}
               height={32}
             />
             <Image
               className="inline-block h-11 w-11 rounded-full cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
               src="/sparkles.png"
-              alt=""
+              alt="avatar"
               width={32}
               height={32}
             />
