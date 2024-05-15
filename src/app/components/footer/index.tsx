@@ -5,11 +5,37 @@ import { Link } from "react-scroll";
 import NextLink from "next/link";
 import Image from "next/image";
 import { i18n } from "@/translate/i18n";
-import BackToTopButton from "../BackToTop/BackToTopButton";
+import { useEffect, useState } from 'react';
+import { ArrowUp } from 'phosphor-react';
 
 function Footer({ ...rest }) {
   const date = new Date();
   const year = date.getFullYear();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section
       className="flex items-center pt-14 w-full justify-center"
@@ -201,8 +227,15 @@ function Footer({ ...rest }) {
               {i18n.t('footer.copyright.link_2')}
             </NextLink>
           </p>
-          
-          <BackToTopButton></BackToTopButton>
+
+
+          <button
+            className={`${isVisible ? 'block' : 'hidden'
+              } dark:bg-btn dark:text-btc fixed bottom-6 right-6 bg-red-500 text-white hover:bg-red-400 p-4 rounded-full shadow-md transition-opacity duration-300`}
+            onClick={scrollToTop}
+          >
+            <ArrowUp className="h-4 w-4" />
+          </button>
 
         </div>
       </div>
