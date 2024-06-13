@@ -42,7 +42,7 @@ const locales = {
                 section_3 :{
                     title : 'Estabelecer parcerias e colaborações.',
                     description : 'Fortalecer a comunidade de software livre em Angola, facilitando a troca de conhecimento, recursos e experiências entre desenvolvedores.'
-                },   
+                },
             },
             motivation:{
                 title: "Nossas Motivações",
@@ -106,7 +106,8 @@ const locales = {
                     link_3:"Equipa",
                 },
                 community:{
-                    title:'Comunidade'
+                    title:'Comunidade',
+                    link_1:'Calendário de Eventos',
                 },
                 project:{
                     title:'Projectos',

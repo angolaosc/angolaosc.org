@@ -146,6 +146,17 @@ function Footer({ ...rest }) {
                     Youtube
                   </NextLink>
                 </li>
+                <li>
+                  <NextLink
+                    href={
+                      "https://calendar.google.com/calendar/u/0?cid=MDU1YzUzZWY2NjcwNjUzYjVmZDdlMWNkYTgzZGZjNmNmZTk0MzI4YTM2NzA4YzljZmY4Njg0MTVlMjMxYTk5NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                    }
+                    target="_blank"
+                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
+                  >
+                    {i18n.t('footer.community.link_1')}
+                  </NextLink>
+                </li>
               </ul>
             </div>
             <div className="w-52">
