@@ -15,16 +15,13 @@
   @apply text-red-600;
 }
 
-.dark body{
-  background-color: #1E293B;
+.dark body {
+  background-color: #1e293b;
 }
 
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-}
-
-:root {
 }
 
 img {
@@ -35,10 +32,12 @@ img {
 .spinner {
   animation: spin 2s linear infinite;
 }
+
 .bounce {
   animation: bounce 3s linear infinite;
   transform: translateY(0);
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0);
@@ -83,49 +82,56 @@ img {
   animation: slide-left 20s linear infinite;
 }
 
-.box-select-language{
+.box-select-language {
   position: relative;
   cursor: pointer;
 }
-.list-language{
-  top:0;
+
+.list-language {
+  top: 0;
   position: absolute;
   width: 120px;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(209, 209, 209, 0.253);
   border-radius: 4px;
   overflow: hidden;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   z-index: 9;
 }
-.hide-language{
+
+.hide-language {
   height: 0 !important;
 }
-.show-language{
+
+.show-language {
   height: 70px !important;
 }
-.list-language li{
+
+.list-language li {
   height: 35px;
-  padding:0 12px;
+  padding: 0 12px;
   display: flex;
   align-items: center;
-  transition: .7s ease-in-out;
+  transition: 0.7s ease-in-out;
   cursor: pointer;
 }
-.list-language li:hover{
+
+.list-language li:hover {
   background-color: #ef4444;
-  color:#fff;
+  color: #fff;
 }
-.box-select-language p{
+
+.box-select-language p {
   display: flex;
-  gap:8px;
+  gap: 8px;
   align-items: center;
 }
+
 @media (max-width: 400px) {
-  .box-select-language{
-    color:#000
+  .box-select-language {
+    color: #000;
   }
-  .list-language{
-    top:-12px
+  .list-language {
+    top: -12px;
   }
 }
