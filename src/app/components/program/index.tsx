@@ -62,15 +62,25 @@ function Program() {
               {i18n.t("program.bloom")}
             </p>
           </div>
+
+          <div className="bg-white p-8 rounded-[50%] absolute left-[-50px] top-[130px] shadow-left">
+            {/* 
+            an extra container parallel to the logo
+            container in circular motion to provide left
+            side shadow 
+            */}
+          </div>
+
           <div className="bg-white p-8 rounded-[50%] absolute left-[-50px] top-[130px] spinner">
             <Image
               src={"/logo-aosc.svg"}
               width={318}
               height={603}
-              alt="Jovem na foto"
+              alt="aosc logo"
               className="w-10 h-10"
             />
           </div>
+
           <Image
             src={"/jovem.png"}
             width={318}
