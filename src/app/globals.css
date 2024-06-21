@@ -135,3 +135,14 @@ img {
     top: -12px;
   }
 }
+
+/* 
+left side shadow for logo the in cirluation motion
+ to avoid conflict with white background color
+*/
+
+.shadow-left {
+  width: 100px;
+  height: 100px;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+}
