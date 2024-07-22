@@ -8,7 +8,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aosc.social/"),
+  metadataBase: new URL("https://www.angolaosc.org/"),
   title: {
     default: "Angola Open-source Community",
     template: "",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Angola Open-source Community",
     description:
       "Criando um impacto significativo na inovação tecnológica do país.",
-    url: "https://aosc.social/",
+    url: "https://www.angolaosc.org/",
     siteName: "Angola Open-source Community",
     locale: "pt_AO",
     type: "website",

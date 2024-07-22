@@ -24,7 +24,7 @@ export const MENU = [
   {
     id: 5,
     text: "AOSFest 2023",
-    url: "https://fest.aosc.social/",
+    url: "https://https://fest23.angolaosc.org/",
   },
   {
     id: 6,
@@ -34,7 +34,7 @@ export const MENU = [
   {
     id: 7,
     text: "Blog",
-    url: "https://blog.aosc.social",
+    url: "https://https://blog.angolaosc.org",
   },
 ];
 
