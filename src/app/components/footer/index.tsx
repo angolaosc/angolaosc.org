@@ -78,7 +78,7 @@ function Footer({ ...rest }) {
                 </li>
                 <li>
                   <NextLink
-                    href={"https://fest.aosc.social/"}
+                    href={"https://https://fest23.angolaosc.org/"}
                     target="_blank"
                     className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
                   >
@@ -164,15 +164,6 @@ function Footer({ ...rest }) {
               {i18n.t('footer.project.title')}
               </h3>
               <ul className="flex flex-col">
-                <li>
-                  <NextLink
-                    href={"https://mentorship.aosc.social"}
-                    target="_blank"
-                    className="dark:text-sky-400 hover:text-black transition-colors duration-[0.3s] ease-linear"
-                  >
-                   {i18n.t('footer.project.link_1')}
-                  </NextLink>
-                </li>
                 <li>
                   <NextLink
                     href={

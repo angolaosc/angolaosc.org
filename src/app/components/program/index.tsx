@@ -47,7 +47,7 @@ function Program() {
             </li>
           </ul>
           <ButtonLink
-            href="https://mentorship.aosc.social/"
+            href="#"
             text={i18n.t("program.button")}
             target="_blank"
             className="w-fit bg-btn dark:text-btc"
