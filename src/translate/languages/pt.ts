@@ -116,7 +116,7 @@ const locales = {
                 copyright:{
                     info_1:" Todos os direitos reservados.",
                     info_2 : "licenciado sob",
-                    link_1 : " ver código fonte",
+                    link_1 : " Código",
                     link_2 : "Licença Apache-2.0",
                 }
              }
