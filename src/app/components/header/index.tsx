@@ -62,7 +62,7 @@ function Header({ ...rest }) {
         <ThemeSwitcher/>
         <ButtonLink
           className="dark:bg-btn dark:text-btc"
-          href={"https://opencollective.com/aosc"}
+          href={"https://opencollective.com/angolaosc"}
           target="_blank"
           text={i18n.t('nav.button')}
         />
