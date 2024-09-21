@@ -19,18 +19,16 @@ function Headline({ ...rest }) {
           // animate={{ opacity: 1 }}
           // transition={{ duration: 0.5 }}
         >
-         {i18n.t('headline.title')}
+          {i18n.t("headline.title")}
         </motion.h1>
         <p className="dark:text-slate-400 md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-        {i18n.t('headline.description')}
+          {i18n.t("headline.description")}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-          className="dark:bg-btn dark:text-btc"
-            href={
-              "https://linktr.ee/angolaosc"
-            }
-            text={i18n.t('headline.button')}
+            className="dark:bg-btn dark:text-btc"
+            href={"https://linktr.ee/angolaosc"}
+            text={i18n.t("headline.button")}
             target="_blank"
           />
           <LinkScroll
@@ -40,49 +38,56 @@ function Headline({ ...rest }) {
             delay={0.8}
             className=" dark:text-slate-400 cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-           {i18n.t('headline.link')}
+            {i18n.t("headline.link")}
           </LinkScroll>
         </div>
         <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
           <div className="flex -space-x-3 overflow-hidden p-2 px-0">
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-11 w-11 rounded-full cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/sparkles.png"
-              alt=""
-              width={32}
-              height={32}
-            />
+            <div className="ring-2 ring-transparent cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out">
+              <img
+                className="rounded-full h-10 w-10 object-cover"
+                src="/antonio.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div className="ring-2 ring-transparent cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out">
+              <img
+                className="rounded-full h-10 w-10 object-cover"
+                src="/lazaro.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div className="ring-2 ring-transparent cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out">
+              <img
+                className="rounded-full h-10 w-10 object-cover"
+                src="/danguya.jpeg"
+                alt="avatar"
+              />
+            </div>
+            <div className="ring-2 ring-transparent cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out">
+              <img
+                className="rounded-full h-10 w-10 object-cover"
+                src="/claudio.jpeg"
+                alt="avatar"
+              />
+            </div>
+            <div className="ring-2 ring-transparent cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out">
+              <img
+                className="rounded-full h-10 w-10 object-cover"
+                src="/euotiniel.png"
+                alt="avatar"
+              />
+            </div>
+            <div className="">
+              <img
+                className="inline-block h-11 w-11 rounded-full cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
+                src="/sparkles.png"
+                alt="avatar"
+              />
+            </div>
           </div>
           <span className="dark:text-slate-400 text-base font-semibold">
-          {i18n.t('headline.info')}
+            {i18n.t("headline.info")}
           </span>
         </div>
       </div>
@@ -109,7 +114,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-         {i18n.t('headline.bloom_1')}
+          {i18n.t("headline.bloom_1")}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
@@ -121,7 +126,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-          {i18n.t('headline.bloom_2')}
+          {i18n.t("headline.bloom_2")}
         </motion.span>
         <Image
           src={"/hero.png"}
