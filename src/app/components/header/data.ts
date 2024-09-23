@@ -23,8 +23,8 @@ export const MENU = [
   },
   {
     id: 5,
-    text: "AOSFest 2023",
-    url: "https://https://fest23.angolaosc.org/",
+    text: "AOSFest 2024",
+    url: "https://https://fest.angolaosc.org/",
   },
   {
     id: 6,
