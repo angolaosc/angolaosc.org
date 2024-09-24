@@ -24,7 +24,7 @@ export const MENU = [
   {
     id: 5,
     text: "AOSFest 2024",
-    url: "https://https://fest.angolaosc.org/",
+    url: "https://fest.angolaosc.org/",
   },
   {
     id: 6,
