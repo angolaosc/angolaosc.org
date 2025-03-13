@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ButtonLink from "../buttonLink";
-import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import Image from "next/image";
 import { i18n } from "@/translate/i18n";
+import DiscordMembers from "./DiscordMembers";
 
 function Headline({ ...rest }) {
   return (
@@ -15,18 +15,18 @@ function Headline({ ...rest }) {
       <div className="max-w-[696px] w-full flex flex-col gap-5 justify-start items-center xl:items-start">
         <motion.h1
           className="dark:text-white md:text-5xl text-3xl font-extrabold leading-[130%] my-element justify-start items-center text-center max-w-3xl xl:max-w-none xl:text-start"
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // transition={{ duration: 0.5 }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 0.5 }}
         >
-         {i18n.t('headline.title')}
+          {i18n.t('headline.title')}
         </motion.h1>
         <p className="dark:text-slate-400 md:text-xl text-sm text-[#646464] leading-[150%] font-medium text-center max-w-3xl xl:text-start">
-        {i18n.t('headline.description')}
+          {i18n.t('headline.description')}
         </p>
         <div className="flex items-center gap-4 flex-col min-[420px]:flex-row">
           <ButtonLink
-          className="dark:bg-btn dark:text-btc"
+            className="dark:bg-btn dark:text-btc"
             href={
               "https://linktr.ee/angolaosc"
             }
@@ -40,51 +40,10 @@ function Headline({ ...rest }) {
             delay={0.8}
             className=" dark:text-slate-400 cursor-pointer hover:no-underline text-gray-500 hover:text-red-600"
           >
-           {i18n.t('headline.link')}
+            {i18n.t('headline.link')}
           </LinkScroll>
         </div>
-        <div className="flex items-center gap-2 flex-col-reverse xl:flex-row">
-          <div className="flex -space-x-3 overflow-hidden p-2 px-0">
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-10 w-10 rounded-full ring-2 ring-white cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/avatar.avif"
-              alt=""
-              width={32}
-              height={32}
-            />
-            <Image
-              className="inline-block h-11 w-11 rounded-full cursor-pointer scale-90 hover:scale-105 transition-all ease-in-out"
-              src="/sparkles.png"
-              alt=""
-              width={32}
-              height={32}
-            />
-          </div>
-          <span className="dark:text-slate-400 text-base font-semibold">
-          {i18n.t('headline.info')}
-          </span>
-        </div>
+        <DiscordMembers i18n={i18n} />
       </div>
       <div className="dark:bg-bgd bg-gray-200 rounded-lg w-[600px] hidden items-center justify-center relative xl:flex">
         <motion.span
@@ -109,7 +68,7 @@ function Headline({ ...rest }) {
             bottom: 50,
           }}
         >
-         {i18n.t('headline.bloom_1')}
+          {i18n.t('headline.bloom_1')}
         </motion.span>
         <motion.span
           className="bg-yellow-300 absolute top-[80%] right-48 text-black font-bold text-base rounded-full px-4 py-3 cursor-pointer z-30"
