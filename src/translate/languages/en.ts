@@ -87,16 +87,20 @@ const locales = {
                     description:"Ex Co-researcher at the Multimodal Digital Media Analysis Lab @ IIIT-D. Passionate about Cloud Native Computing and open-source."
                 },
                 member_2:{
-                    occupation:"CO-Founder| Software Developer",
-                    description:"I'm a software developer and community leader. Passionate about sharing knowledge and enthusiastic about Open-source software."
+                    occupation:"IT professional",
+                    description:""
                 },
                 member_3:{
                     occupation:"Core Member | Software Developer",
                     description:""
                 },
                 member_4:{
-                    occupation:"Core Member | Software Developer | UI Designer",
+                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER ",
                     description:"Passionate about software development, design and education"
+                },
+                member_5:{
+                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER ",
+                    description:"Apaixonado por desenvolvimento de software, design e educação"
                 },
              },
              footer:{

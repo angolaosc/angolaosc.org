@@ -21,11 +21,11 @@ export const MENU = [
     text: i18n.t('nav.link_4'),
     url: "our-team",
   },
-  {
+  /*{
     id: 5,
     text: "AOSFest 2024",
     url: "https://fest.angolaosc.org/",
-  },
+  },*/
   {
     id: 6,
     text: "Podcast",
