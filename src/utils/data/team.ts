@@ -10,31 +10,30 @@ export const TEAM = [
   },
   {
     id: 2,
-    name: "Lázaro Manuel",
+    name: "Patrick Matenda",
     ocupation: i18n.t('team.member_2.occupation'),
-    avatar: "/lazaro.jpg",
+    avatar: "/patrick.jpg",
     description:i18n.t('team.member_2.description'),
   },
   {
     id: 3,
-    name: "Cláudio da Silva",
+    name: "Jessé Inglês",
     ocupation: i18n.t('team.member_3.occupation'),
-    avatar: "/claudio.jpeg",
+    avatar: "/jesse.jpeg",
     description:i18n.t('team.member_3.description'),
   },
   {
     id: 4,
-    name: "Wilmy Danguya",
+    name: "Magalhaes Lemos",
     ocupation:i18n.t('team.member_4.occupation'),
-    avatar: "/danguya.jpeg",
+    avatar: "/magalhaes.png",
     description:i18n.t('team.member_4.description'),
-  },
-  // {
-  //   id: 5,
-  //   name: "Lázaro Inácio",
-  //   ocupation: "Software Developer",
-  //   avatar: "/avatar.avif",
-  //   description:
-  //     "Conheci meu amor através dessa plataforma e não poderia estar mais feliz.",
-  // },
+  }/*,
+  {
+    id: 5,
+    name: "Rubinaldo Domingos",
+    ocupation: i18n.t('team.member_5.occupation'),
+    avatar: "/rubinaldo.jpeg",
+    description: i18n.t('team.member_5.description'),
+  },*/
 ];

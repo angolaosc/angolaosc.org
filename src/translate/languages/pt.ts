@@ -85,15 +85,19 @@ const locales = {
                     description:"Pesquisador colaborador no Multimodal Digital Media Analysis Lab @ IIIT-D. Apaixonado por Cloud Native Computing e open-source."
                 },
                 member_2:{
-                    occupation:"CO-FOUNDER | SOFTWARE DEVELOPER",
-                    description:"Sou desenvolvedor de software e líder comunitário. Apaixonado por compartilhar conhecimento e entusiasta de softwares de open-source"
+                    occupation:"CORE MEMBER | IT professional",
+                    description:""
                 },
                 member_3:{
-                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER",
+                    occupation:"CORE MEMBER | Founder @Tchilla | Back-End Engineer",
                     description:""
                 },
                 member_4:{
-                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER | UI DESIGNER",
+                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER ",
+                    description:"Apaixonado por desenvolvimento de software, design e educação"
+                },
+                member_5:{
+                    occupation:"CORE MEMBER | SOFTWARE DEVELOPER ",
                     description:"Apaixonado por desenvolvimento de software, design e educação"
                 },
              },
