@@ -9,12 +9,12 @@ function Program() {
   return (
     <section className="py-20">
       <div className="flex items-center gap-12 w-full max-w-[1216px] flex-col-reverse xl:flex-row">
-        <div className="flex flex-col xl:gap-28 gap-6">
+        <div className="flex flex-col xl:gap-28 gap-6 max-xl:items-center">
           <h2 className="dark:text-white xl:text-5xl text-3xl font-extrabold leading-[130%]">
             {i18n.t("program.title")}
           </h2>
 
-          <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4">
+          <ul className="flex flex-wrap xl:w-[630px] xl:gap-10 gap-4 max-xl:justify-around px-10">
             <li>
               <div className="flex xl:gap-4 gap-2 w-64 flex-col">
                 <h3 className="dark:text-white xl:text-3xl text-2xl font-bold leading-[120%]">
